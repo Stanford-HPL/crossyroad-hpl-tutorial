@@ -36,7 +36,7 @@ public class CameraMovementScript : MonoBehaviour
         playerMovement = player.GetComponent<PlayerMovementScript>();
 
         // TODO this position and rotation is baked, extract it
-        initialOffset = new Vector3(2.5f, 10.0f, -7.5f);
+        initialOffset = new Vector3(7f, 10f, -10f);
         offset = initialOffset;
 	}
 	
@@ -46,6 +46,7 @@ public class CameraMovementScript : MonoBehaviour
         {
             Vector3 playerPosition = player.transform.position;
             transform.position = new Vector3(playerPosition.x, 0, Mathf.Max(minZ, playerPosition.z)) + offset;
+            transform.rotation = Quaternion.Euler(35, -30, 0);
 
             // Increase z over time if moving.
             offset.z += speedIncrementZ * Time.deltaTime;
@@ -66,6 +67,7 @@ public class CameraMovementScript : MonoBehaviour
         // TODO This kind of reset is dirty, refactor might be needed.
         moving = false;
         offset = initialOffset;
-        transform.position = new Vector3(2.5f, 10.0f, -7.5f);
+        // transform.position = new Vector3(2.5f, 10.0f, -7.5f);
+        transform.position = new Vector3(7f, 10f, -10f);
     }
 }
