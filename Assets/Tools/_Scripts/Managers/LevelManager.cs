@@ -1,6 +1,4 @@
 using System;
-using COM.Metaviz.HPL.Demo;
-using UnityEditor.PackageManager;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
