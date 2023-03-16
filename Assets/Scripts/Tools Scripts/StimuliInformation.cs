@@ -3,13 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 
 namespace AI.Metaviz.HPL.Demo
-{    public class TargetInformation : MonoBehaviour
+{    public class StimuliInformation : MonoBehaviour
     {
         private Transform _player;
         private BoxCollider _playerBoxCollider;
-        private List<Event> _eventList = new();
-        private static int _logId = 0;
-        private static int _carId = 0;
+        private static int _targetId = 0;
+        private static int _distractorId = 0;
         private int _curId;
         private bool _interactedOnce = false;
         private bool _updatedAlready = false;
@@ -22,7 +21,6 @@ namespace AI.Metaviz.HPL.Demo
         private Event _parentEvent;
         private List<Event> _childrenEvent;
         
-        private string parentId;
         private string taskID;
         private bool userInput = false;
         private bool shouldRespond;
@@ -43,6 +41,10 @@ namespace AI.Metaviz.HPL.Demo
             _distractorBackgroundObject = GameObject.Find("BackgroundReference/RoadLine/Road");
         }
 
+        ///<summary>
+        /// Update loop for checking if the player is alive or dead, and running the loop only once per object if player is near log or car.
+        /// If near log or car, set the _curID, and make a parent event. This makes the log or car a stimulus now.
+        /// </summary>
         private void Update()
         {
             // Keeps checking to see if player is alive or dead
@@ -63,17 +65,17 @@ namespace AI.Metaviz.HPL.Demo
             _playerWasOneAwayFromObject = true;
             if (gameObject.CompareTag("Target"))
             {
-                _curId = _logId;
-                _logId += 1;
+                _curId = _targetId;
+                _targetId += 1;
             }
             else if (gameObject.CompareTag("Distractor"))
             {
-                _curId = _carId;
-                _carId += 1;
+                _curId = _distractorId;
+                _distractorId += 1;
             }
             else
             {
-                Debug.LogError("Error: TargetInformation.cs: Object is not a log or car.");
+                Debug.LogError("Error: TargetInformation.cs: Object is not tagged as Target or Distractor.");
                 return;
             }
             
@@ -81,7 +83,6 @@ namespace AI.Metaviz.HPL.Demo
             {
                 _updatedAlready = true;
                 _parentEvent = MakeEventWithoutParentID(Event.EventTypeEnum.Parent);
-                print("Made Parent Event");
             }
         }
 
@@ -97,7 +98,6 @@ namespace AI.Metaviz.HPL.Demo
                 {
                     SetUserInput(true);
                     _childrenEvent.Add(MakeEventWithoutParentID(Event.EventTypeEnum.Child));
-                    print(_parentEvent);
                     MetavizAPIManager.Instance.RawEventList.AddEvent(_parentEvent, _childrenEvent, _curId);
                 }
             }
@@ -137,6 +137,10 @@ namespace AI.Metaviz.HPL.Demo
             }
         }
 
+        /// <summary>
+        /// Sends a POST request to a Psychometric API when the playerdies. This will be a "Child" eventType.
+        /// </summary>
+        /// <returns>Void</returns>
         private void OnPlayerDeath()
         {
             if (!_interactedOnce && _playerWasOneAwayFromObject && CollectAllMetrics())
