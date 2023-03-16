@@ -20,7 +20,7 @@ namespace AI.Metaviz.HPL.Demo
     {
         [DataMember(Name = "raw_data", EmitDefaultValue = false)]
         public List<Event> Data { get; set; }
-        
+
         /// <summary>
         /// array object containing raw data
         /// </summary>
@@ -39,7 +39,7 @@ namespace AI.Metaviz.HPL.Demo
             return JsonConvert.DeserializeObject<EventArray>(data);
         }
     }
-    
+
     /// <summary>
     /// A single interaction.
     /// </summary>
@@ -60,7 +60,7 @@ namespace AI.Metaviz.HPL.Demo
         /// <param name="background">background.</param>
         /// <param name="position">position.</param>
         /// <param name="dimensions">dimensions.</param>
-        public Event(string eventType, string parentId, string taskId, bool userInput, bool shouldRespond, DateTime timeOccurred, Color foreground, Color background, Position position, Dimensions dimensions)
+        public Event(EventTypeEnum eventType = default(EventTypeEnum), string parentId = default(string), string taskId = default(string), bool userInput = default(bool), bool shouldRespond = default(bool), DateTime timeOccurred = default(DateTime), Color foreground = default(Color), Color background = default(Color), Position position = default(Position), Dimensions dimensions = default(Dimensions))
         {
             EventType = eventType;
             ParentId = parentId;
@@ -73,78 +73,93 @@ namespace AI.Metaviz.HPL.Demo
             Position = position;
             Dimensions = dimensions;
         }
-        
+
+        [JsonConverter(typeof(StringEnumConverter))]
+        public enum EventTypeEnum
+        {
+            /// <summary>
+            /// Enum Parent for value: parent
+            /// </summary>
+            [EnumMember(Value = "Parent")] Parent = 1,
+
+            /// <summary>
+            /// Enum Child for value: child
+            /// </summary>
+            [EnumMember(Value = "Child")] Child = 2
+        }
+
         /// <summary>
         /// determines type of event:&#x60;parent&#x60; or &#x60;child&#x60;.
         /// </summary>
         /// <value>determines type of event:&#x60;parent&#x60; or &#x60;child&#x60;.</value>
-        [DataMember(Name="event_type")]
-        public string EventType { get; set; }
+        [DataMember(Name = "event_type")]
+        public EventTypeEnum EventType { get; set; }
 
         /// <summary>
         /// String identifying the parent node in the event timeline. &#x60;parent_id&#x60; is unique for &#x60;parent&#x60; nodes, &#x60;child&#x60; nodes can only point to one extant &#x60;parent&#x60;.
+        /// A parent is the first occurrence of a stimulus. A child is a subsequent occurrence of the same stimulus, and should be linked to the parent.
         /// </summary>
         /// <value>String identifying the parent node in the event timeline. &#x60;parent_id&#x60; is unique for &#x60;parent&#x60; nodes, &#x60;child&#x60; nodes can only point to one extant &#x60;parent&#x60;.</value>
-        [DataMember(Name="parent_id")]
+        [DataMember(Name = "parent_id")]
         public string ParentId { get; set; }
 
         /// <summary>
         /// determines type of task.
         /// </summary>
         /// <value>determines type of task.</value>
-        [DataMember(Name="task_id")]
+        [DataMember(Name = "task_id")]
         public string TaskId { get; set; }
 
         /// <summary>
         /// indicates whether the event was a user-initiated or software-initiated.
         /// </summary>
         /// <value>indicates whether the event was a user-initiated or software-initiated.</value>
-        [DataMember(Name="user_input")]
+        [DataMember(Name = "user_input")]
         public bool UserInput { get; set; }
 
         /// <summary>
         /// indicates whether the user is expected to respond to the event. Only for &#x60;parent&#x60; nodes.
         /// </summary>
         /// <value>indicates whether the user is expected to respond to the event. Only for &#x60;parent&#x60; nodes.</value>
-        [DataMember(Name="should_respond")]
+        [DataMember(Name = "should_respond")]
         public bool ShouldRespond { get; set; }
 
         /// <summary>
         /// Gets TimeOccurred
         /// </summary>
-        [DataMember(Name="time_occurred")]
+        [DataMember(Name = "time_occurred")]
         public string TimeOccurred { get; private set; }
-        
+
         /// <summary>
         /// Sets TimeOccurred
         /// </summary>
         public void SetTimeOccurred(DateTime timeOccurred)
         {
-            TimeOccurred = timeOccurred.ToString("yyyy-MM-ddTHH:mm:ss.fffZ"); 
+            TimeOccurred = timeOccurred.ToString("yyyy-MM-ddTHH:mm:ss.fffZ");
         }
 
         /// <summary>
         /// Gets or Sets Foreground
         /// </summary>
-        [DataMember(Name="foreground")]
+        [DataMember(Name = "foreground")]
         public Color Foreground { get; set; }
 
         /// <summary>
         /// Gets or Sets Background
         /// </summary>
-        [DataMember(Name="background")]
+        [DataMember(Name = "background")]
         public Color Background { get; set; }
 
         /// <summary>
         /// Gets or Sets Position
         /// </summary>
-        [DataMember(Name="position")]
+        [DataMember(Name = "position")]
         public Position Position { get; set; }
 
         /// <summary>
         /// Gets or Sets Dimensions
         /// </summary>
-        [DataMember(Name="dimensions")]
+        [DataMember(Name = "dimensions")]
         public Dimensions Dimensions { get; set; }
 
         /// <summary>
@@ -168,7 +183,7 @@ namespace AI.Metaviz.HPL.Demo
             sb.Append("}\n");
             return sb.ToString();
         }
-        
+
         /// <summary>
         /// Returns the JSON string presentation of the object
         /// </summary>
@@ -178,7 +193,7 @@ namespace AI.Metaviz.HPL.Demo
             return JsonConvert.SerializeObject(this, Formatting.Indented);
         }
     }
-    
+
     [Serializable]
     [DataContract]
     // The color the stimulus. Use RGB color types if the object is a solid fill, image_id is reccomended otherwise.
@@ -188,12 +203,13 @@ namespace AI.Metaviz.HPL.Demo
         /// Initializes a new instance of the <see cref="Color" /> class.
         /// </summary>
         /// <param name="encoding">The type of color encoding &#x60;RGB8&#x60;, &#x60;RGB16&#x60;, &#x60;RGBfloat&#x60; or &#x60;Image&#x60;; if unused, &#x60;null&#x60;..</param>
-        /// <param name="r">Red channel value, if a solid fill.</param>
-        /// <param name="g">Green channel value, if a solid fill.</param>
-        /// <param name="b">Blue channel value, if a solid fill.</param>
+        /// <param name="r">Red channel value, if a solid fill, 0-1.</param>
+        /// <param name="g">Green channel value, if a solid fill, 0-1.</param>
+        /// <param name="b">Blue channel value, if a solid fill, 0-1.</param>
         /// <param name="imageId">Optional unique image ID for sprites, generated during dev onboarding. Present in &#x60;VizzarioConfig.plist&#x60; to associate with friendly name..</param>
         /// <param name="transforms">transforms.</param>
-        public Color(string encoding = "null", int r = default, int g = default, int b = default, string imageId = "null", ImageTransformations transforms = default)
+        public Color(string encoding = "null", float r = default, float g = default, float b = default,
+            string imageId = null, ImageTransformations transforms = default)
         {
             this.Encoding = encoding;
             this.R = r;
@@ -202,46 +218,46 @@ namespace AI.Metaviz.HPL.Demo
             this.ImageId = imageId;
             this.Transforms = transforms;
         }
-        
+
         /// <summary>
         /// The type of color encoding &#x60;RGB8&#x60;, &#x60;RGB16&#x60;, &#x60;RGBfloat&#x60; or &#x60;Image&#x60;; if unused, &#x60;null&#x60;.
         /// </summary>
         /// <value>The type of color encoding &#x60;RGB8&#x60;, &#x60;RGB16&#x60;, &#x60;RGBfloat&#x60; or &#x60;Image&#x60;; if unused, &#x60;null&#x60;.</value>
-        [DataMember(Name="encoding")]
+        [DataMember(Name = "encoding")]
         public string Encoding { get; set; }
 
         /// <summary>
-        /// Red channel value, if a solid fill
+        /// Red channel value, if a solid fill, from 0-1.
         /// </summary>
         /// <value>Red channel value, if a solid fill</value>
-        [DataMember(Name="r")]
-        public decimal R { get; set; }
+        [DataMember(Name = "r")]
+        public float R { get; set; }
 
         /// <summary>
-        /// Green channel value, if a solid fill
+        /// Green channel value, if a solid fill, from 0-1.
         /// </summary>
         /// <value>Green channel value, if a solid fill</value>
-        [DataMember(Name="g")]
-        public decimal G { get; set; }
+        [DataMember(Name = "g")]
+        public float G { get; set; }
 
         /// <summary>
-        /// Blue channel value, if a solid fill
+        /// Blue channel value, if a solid fill, from 0-1.
         /// </summary>
         /// <value>Blue channel value, if a solid fill</value>
-        [DataMember(Name="b")]
-        public decimal B { get; set; }
+        [DataMember(Name = "b")]
+        public float B { get; set; }
 
         /// <summary>
         /// Optional unique image ID for sprites, generated during dev onboarding. Present in &#x60;VizzarioConfig.plist&#x60; to associate with friendly name.
         /// </summary>
         /// <value>Optional unique image ID for sprites, generated during dev onboarding. Present in &#x60;VizzarioConfig.plist&#x60; to associate with friendly name.</value>
-        [DataMember(Name="image_id", EmitDefaultValue=true)]
+        [DataMember(Name = "image_id", EmitDefaultValue = false)]
         public string ImageId { get; set; }
 
         /// <summary>
         /// Gets or Sets Transforms
         /// </summary>
-        [DataMember(Name="transforms")]
+        [DataMember(Name = "transforms", EmitDefaultValue = false)]
         public ImageTransformations Transforms { get; set; }
 
         /// <summary>
@@ -271,6 +287,44 @@ namespace AI.Metaviz.HPL.Demo
             return JsonConvert.SerializeObject(this, Formatting.Indented);
         }
     }
+    
+    /// <summary>
+    /// unit of measure for dimensions
+    /// </summary>
+    /// <value>unit of measure for dimensions</value>
+    [JsonConverter(typeof(StringEnumConverter))]
+    public enum UnitTypeEnum
+    {
+        /// <summary>
+        /// Enum Points for value: points
+        /// </summary>
+        [EnumMember(Value = "points")] Points = 1,
+
+        /// <summary>
+        /// Enum Pixels for value: pixels
+        /// </summary>
+        [EnumMember(Value = "pixels")] Pixels = 2,
+
+        /// <summary>
+        /// Enum Meters for value: meters
+        /// </summary>
+        [EnumMember(Value = "meters")] Meters = 3,
+
+        /// <summary>
+        /// Enum Centimeters for value: centimeters
+        /// </summary>
+        [EnumMember(Value = "centimeters")] Centimeters = 4,
+
+        /// <summary>
+        /// Enum Cm for value: cm
+        /// </summary>
+        [EnumMember(Value = "cm")] Cm = 5,
+
+        /// <summary>
+        /// Enum M for value: m
+        /// </summary>
+        [EnumMember(Value = "m")] M = 6
+    }
 
     [Serializable]
     [DataContract]
@@ -285,7 +339,8 @@ namespace AI.Metaviz.HPL.Demo
         /// <param name="contrast">Multiplier that describes how image contrast was altered. 1 denotes original contrast. Range of [0, +inf).</param>
         /// <param name="saturation">Multiplier that describes how image saturation was altered. 1 denotes original saturation. Range of [0, +inf).</param>
         /// <param name="blur">Number of pixels used in a gaussian blur function. Range of [0, +inf).</param>
-        public ImageTransformations(float alpha = default, float hue = default, float brightness = default, float contrast = default, float saturation = default, float blur = default)
+        public ImageTransformations(float alpha = default, float hue = default, float brightness = default,
+            float contrast = default, float saturation = default, float blur = default)
         {
             this.Alpha = alpha;
             this.Hue = hue;
@@ -299,42 +354,42 @@ namespace AI.Metaviz.HPL.Demo
         /// Opacity (alpha) of object. Range of [0, 1]
         /// </summary>
         /// <value>Opacity (alpha) of object. Range of [0, 1]</value>
-        [DataMember(Name="alpha")]
+        [DataMember(Name = "alpha", EmitDefaultValue = false)]
         public float Alpha { get; set; }
 
         /// <summary>
         /// Degrees from original hue of 0°. Range of [-180°, 180°]
         /// </summary>
         /// <value>Degrees from original hue of 0°. Range of [-180°, 180°]</value>
-        [DataMember(Name="hue")]
+        [DataMember(Name = "hue", EmitDefaultValue = false)]
         public float Hue { get; set; }
 
         /// <summary>
         /// Multiplier that describes how image brightness was altered. 1 denotes original brightness. Range of [0, +inf)
         /// </summary>
         /// <value>Multiplier that describes how image brightness was altered. 1 denotes original brightness. Range of [0, +inf)</value>
-        [DataMember(Name="brightness")]
+        [DataMember(Name = "brightness", EmitDefaultValue = false)]
         public float Brightness { get; set; }
 
         /// <summary>
         /// Multiplier that describes how image contrast was altered. 1 denotes original contrast. Range of [0, +inf)
         /// </summary>
         /// <value>Multiplier that describes how image contrast was altered. 1 denotes original contrast. Range of [0, +inf)</value>
-        [DataMember(Name="contrast")]
+        [DataMember(Name = "contrast", EmitDefaultValue = false)]
         public float Contrast { get; set; }
 
         /// <summary>
         /// Multiplier that describes how image saturation was altered. 1 denotes original saturation. Range of [0, +inf)
         /// </summary>
         /// <value>Multiplier that describes how image saturation was altered. 1 denotes original saturation. Range of [0, +inf)</value>
-        [DataMember(Name="saturation")]
+        [DataMember(Name = "saturation", EmitDefaultValue = false)]
         public float Saturation { get; set; }
 
         /// <summary>
         /// Number of pixels used in a gaussian blur function. Range of [0, +inf)
         /// </summary>
         /// <value>Number of pixels used in a gaussian blur function. Range of [0, +inf)</value>
-        [DataMember(Name="blur")]
+        [DataMember(Name = "blur", EmitDefaultValue = false)]
         public float Blur { get; set; }
 
         /// <summary>
@@ -373,53 +428,9 @@ namespace AI.Metaviz.HPL.Demo
         /// unit of measure for dimensions
         /// </summary>
         /// <value>unit of measure for dimensions</value>
-        [JsonConverter(typeof(StringEnumConverter))]
-        public enum UnitTypeEnum
-        {
-            /// <summary>
-            /// Enum Points for value: points
-            /// </summary>
-            [EnumMember(Value = "points")]
-            Points = 1,
-
-            /// <summary>
-            /// Enum Pixels for value: pixels
-            /// </summary>
-            [EnumMember(Value = "pixels")]
-            Pixels = 2,
-
-            /// <summary>
-            /// Enum Meters for value: meters
-            /// </summary>
-            [EnumMember(Value = "meters")]
-            Meters = 3,
-
-            /// <summary>
-            /// Enum Centimeters for value: centimeters
-            /// </summary>
-            [EnumMember(Value = "centimeters")]
-            Centimeters = 4,
-
-            /// <summary>
-            /// Enum Cm for value: cm
-            /// </summary>
-            [EnumMember(Value = "cm")]
-            Cm = 5,
-
-            /// <summary>
-            /// Enum M for value: m
-            /// </summary>
-            [EnumMember(Value = "m")]
-            M = 6
-
-        }
-
-        /// <summary>
-        /// unit of measure for dimensions
-        /// </summary>
-        /// <value>unit of measure for dimensions</value>
-        [DataMember(Name="unit_type")]
+        [DataMember(Name = "unit_type")]
         public UnitTypeEnum? UnitType { get; set; }
+
         /// <summary>
         /// Initializes a new instance of the <see cref="Dimensions" /> class.
         /// </summary>
@@ -427,7 +438,8 @@ namespace AI.Metaviz.HPL.Demo
         /// <param name="width">width.</param>
         /// <param name="height">height.</param>
         /// <param name="depth">depth.</param>
-        public Dimensions(UnitTypeEnum? unitType = default(UnitTypeEnum?), float width = default(float), float height = default(float), float depth = default(float))
+        public Dimensions(UnitTypeEnum? unitType = default(UnitTypeEnum?), float width = default(float),
+            float height = default(float), float depth = default(float))
         {
             this.UnitType = unitType;
             this.Width = width;
@@ -439,19 +451,19 @@ namespace AI.Metaviz.HPL.Demo
         /// <summary>
         /// Gets or Sets Width
         /// </summary>
-        [DataMember(Name="width")]
+        [DataMember(Name = "width", EmitDefaultValue = false)]
         public float Width { get; set; }
 
         /// <summary>
         /// Gets or Sets Height
         /// </summary>
-        [DataMember(Name="height")]
+        [DataMember(Name = "height", EmitDefaultValue = false)]
         public float Height { get; set; }
 
         /// <summary>
         /// Gets or Sets Depth
         /// </summary>
-        [DataMember(Name="depth")]
+        [DataMember(Name = "depth", EmitDefaultValue = false)]
         public float Depth { get; set; }
 
         /// <summary>
@@ -488,53 +500,9 @@ namespace AI.Metaviz.HPL.Demo
         /// unit of measure for position
         /// </summary>
         /// <value>unit of measure for position</value>
-        [JsonConverter(typeof(StringEnumConverter))]
-        public enum UnitTypeEnum
-        {
-            /// <summary>
-            /// Enum Points for value: points
-            /// </summary>
-            [EnumMember(Value = "points")]
-            Points = 1,
-
-            /// <summary>
-            /// Enum Pixels for value: pixels
-            /// </summary>
-            [EnumMember(Value = "pixels")]
-            Pixels = 2,
-
-            /// <summary>
-            /// Enum Meters for value: meters
-            /// </summary>
-            [EnumMember(Value = "meters")]
-            Meters = 3,
-
-            /// <summary>
-            /// Enum Centimeters for value: centimeters
-            /// </summary>
-            [EnumMember(Value = "centimeters")]
-            Centimeters = 4,
-
-            /// <summary>
-            /// Enum Cm for value: cm
-            /// </summary>
-            [EnumMember(Value = "cm")]
-            Cm = 5,
-
-            /// <summary>
-            /// Enum M for value: m
-            /// </summary>
-            [EnumMember(Value = "m")]
-            M = 6
-
-        }
-
-        /// <summary>
-        /// unit of measure for position
-        /// </summary>
-        /// <value>unit of measure for position</value>
-        [DataMember(Name="unit_type")]
+        [DataMember(Name = "unit_type", EmitDefaultValue = false)]
         public UnitTypeEnum? UnitType { get; set; }
+
         /// <summary>
         /// Initializes a new instance of the <see cref="Position" /> class.
         /// </summary>
@@ -542,30 +510,31 @@ namespace AI.Metaviz.HPL.Demo
         /// <param name="x">x.</param>
         /// <param name="y">y.</param>
         /// <param name="z">z.</param>
-        public Position(UnitTypeEnum? unitType = default(UnitTypeEnum?), float x = default(float), float y = default(float), float z = default(float))
+        public Position(UnitTypeEnum? unitType = default(UnitTypeEnum?), float x = default(float),
+            float y = default(float), float z = default(float))
         {
             this.UnitType = unitType;
             this.X = x;
             this.Y = y;
             this.Z = z;
         }
-        
+
         /// <summary>
         /// Gets or Sets X
         /// </summary>
-        [DataMember(Name="x")]
+        [DataMember(Name = "x")]
         public float X { get; set; }
 
         /// <summary>
         /// Gets or Sets Y
         /// </summary>
-        [DataMember(Name="y")]
+        [DataMember(Name = "y")]
         public float Y { get; set; }
 
         /// <summary>
         /// Gets or Sets Z
         /// </summary>
-        [DataMember(Name="z")]
+        [DataMember(Name = "z", EmitDefaultValue = false)]
         public float Z { get; set; }
 
         /// <summary>

@@ -11,8 +11,6 @@ public class GameManager : MonoBehaviour
     public GameState State { get; private set; }
     public static event Action<GameState> OnGameStateChanged;
 
-    public int GameLength = 45;
-    
     private MetricInformation.StaticMetrics _staticMetrics;
     
     /// <summary>

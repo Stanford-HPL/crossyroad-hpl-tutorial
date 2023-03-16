@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using System.Collections;
 
 public class PlayerMovementScript : MonoBehaviour {
@@ -60,12 +61,13 @@ public class PlayerMovementScript : MonoBehaviour {
     private float startY;
 
     private Rigidbody body;
+    private BoxCollider boxCollider;
 
     private GameObject mesh;
 
     private GameStateControllerScript gameStateController;
     private int score;
-
+    
     public void Start()
     {
         current = transform.position;
@@ -75,6 +77,7 @@ public class PlayerMovementScript : MonoBehaviour {
         body = GetComponentInChildren<Rigidbody>();
 
         mesh = GameObject.Find("Player/Mesh");
+        boxCollider = GameObject.Find("Player").GetComponent<BoxCollider>();
 
         score = 0;
         gameStateController = GameObject.Find("GameStateController").GetComponent<GameStateControllerScript>();
@@ -116,15 +119,6 @@ public class PlayerMovementScript : MonoBehaviour {
             //body.MovePosition(new Vector3(x, y, z));
         } */
 
-        //TODO: Implement this
-        #region Tools Code For Target User Response = True
-        
-        
-
-        
-
-        #endregion
-        
         score = Mathf.Max(score, (int)current.z);
         gameStateController.score = score;
     }
@@ -343,6 +337,7 @@ public class PlayerMovementScript : MonoBehaviour {
     {
         // When game over, disable moving.
         canMove = false;
+        boxCollider.enabled = false;
 
         // Call GameOver at game state controller (instead of sending messages).
         gameStateController.GameOver();
@@ -354,6 +349,7 @@ public class PlayerMovementScript : MonoBehaviour {
         transform.position = new Vector3(0, 1, 0);
         transform.localScale = new Vector3(1, 1, 1);
         transform.rotation = Quaternion.identity;
+        boxCollider.enabled = true;
         score = 0;
     }
 }
