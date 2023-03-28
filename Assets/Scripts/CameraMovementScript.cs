@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using System.Collections;
 using AI.Metaviz.HPL.Demo;
 
 [RequireComponent(typeof(PlayerMovementScript))]
@@ -70,8 +69,5 @@ public class CameraMovementScript : MonoBehaviour
         offset = initialOffset;
         // transform.position = new Vector3(2.5f, 10.0f, -7.5f);
         transform.position = new Vector3(7f, 10f, -10f);
-        
-        MetavizAPIManager.Instance.RawEventList.GetVpiScore(vpiScoreCallback: vpiScore =>
-            print("VPI Score: " + vpiScore));
     }
 }

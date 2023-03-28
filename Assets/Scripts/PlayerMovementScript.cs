@@ -119,8 +119,11 @@ public class PlayerMovementScript : MonoBehaviour {
             //body.MovePosition(new Vector3(x, y, z));
         } */
 
-        score = Mathf.Max(score, (int)current.z);
-        gameStateController.score = score;
+        if (gameObject.CompareTag("Player"))
+        {
+            score = Mathf.Max(score, (int)current.z);
+            gameStateController.score = score;
+        }
     }
 	
 	private void HandleMouseClick()
@@ -338,6 +341,7 @@ public class PlayerMovementScript : MonoBehaviour {
         // When game over, disable moving.
         canMove = false;
         boxCollider.enabled = false;
+        LevelManager.Instance.SwapToScoreScene();
 
         // Call GameOver at game state controller (instead of sending messages).
         gameStateController.GameOver();

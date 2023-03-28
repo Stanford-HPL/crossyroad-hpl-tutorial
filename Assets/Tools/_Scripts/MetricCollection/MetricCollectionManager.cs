@@ -7,10 +7,8 @@ namespace MetricCollection
     {
         public static MetricCollectionManager Instance;
         
-        public MetricInformation.StaticMetrics StaticMetrics;
         public List<MetricInformation.QuestionnaireMetrics> QuestionnaireMetricsList;
-        public List<MetricInformation.DynamicMetrics> DynamicMetricsList;
-        
+
         /// <summary>
         /// Makes GameManager a singleton
         /// </summary>
@@ -29,23 +27,8 @@ namespace MetricCollection
         private void Start()
         {
             QuestionnaireMetricsList = new List<MetricInformation.QuestionnaireMetrics>();
-            DynamicMetricsList = new List<MetricInformation.DynamicMetrics>();
-            GetStaticMetrics();
         }
-        
-        /// <summary>
-        /// Creates an array of Static Metrics
-        /// Can add any other Static Metric needed in code.
-        /// </summary>
-        private void GetStaticMetrics()
-        {
-            StaticMetrics =
-                new MetricInformation.StaticMetrics(
-                    screenResolution: Screen.currentResolution,
-                    screenDPI: Screen.dpi
-                    );
-        }
-        
+
         /// <summary>
         /// Takes questionMetrics and adds to the QuestionMetricsList
         /// </summary>
@@ -53,15 +36,6 @@ namespace MetricCollection
         public void AppendToQuestionnaireMetricsList(MetricInformation.QuestionnaireMetrics questionnaireMetrics)
         {
             QuestionnaireMetricsList.Add(questionnaireMetrics);
-        }
-
-        /// <summary>
-        /// Takes dynamicMetrics and adds to the DynamicMetricsList
-        /// </summary>
-        /// <param name="dynamicMetrics"></param>
-        public void AppendToDynamicMetrics(MetricInformation.DynamicMetrics dynamicMetrics)
-        {
-            DynamicMetricsList.Add(dynamicMetrics);
         }
     }
 

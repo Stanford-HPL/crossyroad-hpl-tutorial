@@ -1,8 +1,11 @@
 using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+using AI.Metaviz.HPL.Demo;
 using MetricCollection;
-using Unity.VisualScripting;
-using UnityEditor;
 using UnityEngine;
+using Object = System.Object;
 
 
 public class GameManager : MonoBehaviour
@@ -11,7 +14,7 @@ public class GameManager : MonoBehaviour
     public GameState State { get; private set; }
     public static event Action<GameState> OnGameStateChanged;
 
-    private MetricInformation.StaticMetrics _staticMetrics;
+    public TargetDistractorTask GameTargetDistractorTask = new();
     
     /// <summary>
     /// The GameStates that the game is currently in. Make sure to update GameState each time a new GameState is reached.
@@ -23,6 +26,7 @@ public class GameManager : MonoBehaviour
         GameSelector,
         Game,
         End,
+        Scores,
         
         FILL_IN_GAME_STATE,
     }
@@ -75,6 +79,9 @@ public class GameManager : MonoBehaviour
             case GameState.End:
                 HandleEnd();
                 break;
+            case GameState.Scores:
+                HandleScores();
+                break;
             case GameState.FILL_IN_GAME_STATE:
                 throw new ArgumentException("PLEASE FILL IN GAME STATE IN ASSET");
             default:
@@ -91,7 +98,7 @@ public class GameManager : MonoBehaviour
     private void HandleQuestionnaire()
     {
         print("GM: Questionnaire");
-        LevelManager.Instance.LoadNewScene("GameSelector");
+        LevelManager.Instance.LoadNewScene("Questionnaire");
     } 
     
     /// <summary>
@@ -101,8 +108,7 @@ public class GameManager : MonoBehaviour
     private void HandleGameSelector()
      {
          print("GM: Game Selector");
-         PrintQuestionnaireMetrics();
-         PrintStaticMetrics();
+         StartCoroutine(PostAndGetBatchMetadata());
      }
 
     private void HandleGame()
@@ -118,65 +124,41 @@ public class GameManager : MonoBehaviour
     {
         print("GM: End");
         LevelManager.Instance.LoadNewScene("Ending");
-
-        PrintAllMetrics();
-    }
-
-    /// <summary>
-    /// This function will print every Metric in the console
-    /// </summary>
-    private void PrintAllMetrics()
-    {
-        PrintQuestionnaireMetrics();
-        PrintStaticMetrics();
-        PrintDynamicMetrics();
+        
+        GameTargetDistractorTask.GetVpiScore((vpiScore) =>
+        {
+            VPIManager.Instance.ParseVPIScore(vpiScore);
+            print("VPI Score: " + vpiScore);
+        });
     }
     
     /// <summary>
-    /// This function will print every Questionnaire Metric in the console
+    /// Functions/events in this function will trigger when HandleScore is called when
+    /// GameState is changed to End
     /// </summary>
-    private void PrintQuestionnaireMetrics()
+    private void HandleScores()
     {
-        print("");
-        print("The Questionnaire Metrics Are:");
-        foreach (var questionMetric in MetricCollectionManager.Instance.QuestionnaireMetricsList)
-        {
-            print("Question:" + questionMetric.Question);
-            print("Selected Answer:" + questionMetric.Answer);
-            print("");
-        }
-        print("");
+        print("GM: Scores");
+        LevelManager.Instance.LoadNewScene("Scores");
     }
-
+    
     /// <summary>
-    /// This function will print every Static Metric in the console
+    /// This function will grab the questionnaire metrics from the MetricCollectionManager, turning it into
+    /// batch metadata. Then it POST and GET the batch metadata from the server
     /// </summary>
-    private void PrintStaticMetrics()
+    /// <param name="callback">Optional Callback function</param>
+    /// <returns></returns>
+    private IEnumerator PostAndGetBatchMetadata(Action<string> callback = null)
     {
-        print("");
-        print("The Static Metrics Are:");
-        print("Screen Resolution: " + MetricCollectionManager.Instance.StaticMetrics.ScreenResolution);
-        print("Screen DPI: " + MetricCollectionManager.Instance.StaticMetrics.ScreenDPI);
-        print("");
-    }
-
-    /// <summary>
-    /// This function will print every Dynamic Metric in the console
-    /// </summary>
-    private void PrintDynamicMetrics()
-    {
-        print("");
-        print("The Dynamic Metrics Are:");
-        foreach (var dynamicMetric in MetricCollectionManager.Instance.DynamicMetricsList)
+        // Fills the metaData dictionary with the questionnaire metrics
+        Dictionary<string, Object> metaData = new Dictionary<string, Object>();
+        for (var questionNumber = 1; questionNumber < MetricCollectionManager.Instance.QuestionnaireMetricsList.Count() + 1; questionNumber++)
         {
-            print("Time:" + dynamicMetric.Time);
-            print("Is Target:" + dynamicMetric.IsTarget);
-            print("Is Clicked: " + dynamicMetric.IsInteracted);
-            //INPUT PSYCHOMETRICS HERE
-            print("Enemy Position: " + dynamicMetric.EnemyPosition);
-            print("Enemy Move Speed: " + dynamicMetric.EnemyMoveSpeed);
-            print("");
+            metaData["Question " + questionNumber + ":"] = MetricCollectionManager.Instance.QuestionnaireMetricsList[questionNumber - 1];
         }
-        print("");
+         
+        BatchMetadata batchMetadata = new BatchMetadata(metadata: metaData, updateTime: DateTime.Now);
+        yield return StartCoroutine(MetavizAPIManager.Instance.PostBatchMetadata(batchMetadata));
+        MetavizAPIManager.Instance.BeginGetBatchMetadata(callback);
     }
 }

@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using UnityEngine;
 
 namespace AI.Metaviz.HPL.Demo
@@ -67,16 +68,11 @@ namespace AI.Metaviz.HPL.Demo
         {
             MetavizAPIManager.Instance.BeginPostPsychometrics(new EventArray(_eventList), callback: (result) =>
             {
-                MetavizAPIManager.Instance.BeginGetPsychometricMeasures(callback: (getResult) =>
+                MetavizAPIManager.Instance.BeginGetPerformanceModel(callback: (getResult) =>
                 {
                     vpiScoreCallback?.Invoke(getResult);
                 });
             });
-        }
-
-        public void Clear()
-        {
-            _eventList.Clear();
         }
     }
 }

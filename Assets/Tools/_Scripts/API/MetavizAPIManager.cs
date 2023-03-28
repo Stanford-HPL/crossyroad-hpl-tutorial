@@ -1,26 +1,24 @@
 using System;
 using System.Collections;
-using System.ComponentModel;
 using System.IO;
 using System.Text;
 using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
 using UnityEngine;
 using UnityEngine.Networking;
+using UnityEngine.XR;
 
 namespace AI.Metaviz.HPL.Demo
 {
     public class MetavizAPIManager : MonoBehaviour
     {
         public static MetavizAPIManager Instance;
+        
         public TargetDistractorTask RawEventList = new();
 
         private const string baseURL = "https://insights.platform.hpl.stanford.edu";
-        private const string batch_metadata_GET_path = "/metadata/batches/";
 
-        private string client_device;
         private string batch_id = "use GetBatchID to obtain a new unique one";
-        private object batch_metadata;
+        private string client_device;
         public string ApiKey { get; set; }
 
         /// <summary>
@@ -42,12 +40,11 @@ namespace AI.Metaviz.HPL.Demo
         private void Start()
         {
             GetClientDevice();
-            StartCoroutine(GetBatchID());
+            StartCoroutine(BeginSession());
         }
-
-
+        
         /// <summary>
-        /// Sends a GET request to the server's /metadata/batches endpoint to retrieve the batch metadata for the current batch ID.
+        /// Sends a POST request to the server's /psychometric/measures endpoint to calculate psychometric measures from the user's raw psychometric response data.
         /// </summary>
         /// <param name="eventToPost">The event array to post to the server.</param>
         /// <param name="callback">An optional callback function that will receive the response from the server as a string.</param>
@@ -55,25 +52,138 @@ namespace AI.Metaviz.HPL.Demo
         {
             StartCoroutine(PostPsychometrics(eventToPost, callback));
         }
-
-
+        
         /// <summary>
-        /// Begins a coroutine to send a GET request to the server's /psychometrics/measures endpoint to retrieve psychometric measures calculated from the user's raw psychometric response data.
+        /// Begins a coroutine to send a GET request to the server's /behaviors/performance endpoint to retrieve performance model measures calculated from the user's raw psychometric response data.
         /// </summary>
         /// <param name="callback">An optional callback function that will receive the response from the server as a string.</param>
-        public void BeginGetPsychometricMeasures(Action<string> callback = null)
+        public void BeginGetPerformanceModel(Action<string> callback = null)
         {
-            StartCoroutine(GetPsychometricMeasures(callback));
+            StartCoroutine(GetPerformanceModel(callback));
         }
-
+        
         /// <summary>
-        /// Sends a GET request to the server's /psychometrics/measures endpoint to retrieve psychometric measures calculated from the user's raw psychometric response data.
+        /// Sends a POST request to the server's /metadata/batches/{batch_id} endpoint to post the questionnaire to the server.
+        /// </summary>
+        /// <param name="batchMetadataToPost">The questionnaire metadata to post to the server.</param>
+        public void BeginPostBatchMetadata(BatchMetadata batchMetadataToPost)
+        {
+            StartCoroutine(PostBatchMetadata(batchMetadataToPost));
+        }
+        
+        /// <summary>
+        /// Sends a GET request to the server's /metadata/batches/{batch_id} endpoint to receive the questionnaire on the server.
+        /// </summary>
+        /// <param name="callback">An optional callback function that will receive the response from the server as a string.</param>
+        public void BeginGetBatchMetadata(Action<string> callback = null)
+        {
+            StartCoroutine(GetBatchMetadata(callback));
+        }
+        
+        /// <summary>
+        /// Reads the access token from the auth.json file and returns it.
+        /// The auth.json file should contain the access token on the first line.
+        /// It should be located in the .metaviz folder in the user's home directory.
+        /// The .metaviz folder should be created if it does not exist.
+        /// The user's home directory is ~/ on Linux and Mac and C:\Users\{username} on Windows.
+        /// </summary>
+        /// <returns> The access token or null if the file does not exist. </returns>
+        private string GetAccessToken()
+        {
+            var userPath = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile);
+            var authPath = $"{userPath}/.metaviz/auth.json";
+            if (File.Exists(authPath))
+            {
+                return File.ReadAllText(authPath).Trim();
+            }
+
+            Debug.LogError(
+                "API Key is null and auth.json does not exist. Please check https://github.com/srcnalt/OpenAI-Unity#saving-your-credentials except use the filepath of .metaviz/authPath.json instead.");
+
+            return null;
+        }
+        
+        /// <summary>
+        /// When a new session begins, obtain the batch ID and post the device data to the server's /device endpoint.
+        /// </summary>
+        private IEnumerator BeginSession()
+        {
+            yield return StartCoroutine(GetBatchID());
+            DeviceData deviceData = GetUserDeviceData();
+            StartCoroutine(PostDevice(deviceData));
+        }
+        
+        /// <summary>
+        /// Posts Device Data to the server's /device endpoint via a POST request using a UnityWebRequest object.
+        /// The result of the post is passed to an optional callback function.
+        /// </summary>
+        /// <param name="deviceDataToPost">The DeviceData object to be posted to the endpoint.</param>
+        /// <param name="callback">An optional callback function that will receive the PostResult object returned from the server.</param>
+        /// <returns>An IEnumerator object to be used in a Coroutine.</returns>
+        private IEnumerator PostDevice(DeviceData deviceDataToPost, Action<string> callback = null)
+        {
+            using UnityWebRequest postDeviceRequest = CreateRequest(baseURL + "/device",
+                RequestType.POST, deviceDataToPost);
+            AttachHeader(postDeviceRequest, "batch_id", batch_id);
+            AttachHeader(postDeviceRequest, "client_device", client_device);
+            yield return postDeviceRequest.SendWebRequest();
+            PrintRequestFailOrSuccess(postDeviceRequest, RequestType.POST);
+            print(deviceDataToPost.ToJson());
+            callback?.Invoke(postDeviceRequest.downloadHandler.text);
+        }
+        
+        /// <summary>
+        /// Posts BatchMetadata to the server's /metadata/batches/{batch_id} endpoint via a POST request using a UnityWebRequest object.
+        /// The result of the post is passed to an optional callback function.
+        /// </summary>
+        /// <param name="batchMetadataToPost">The BatchMetadataToPost object to be posted to the endpoint.</param>
+        /// <returns>An IEnumerator object to be used in a Coroutine.</returns>
+        public IEnumerator PostBatchMetadata(BatchMetadata batchMetadataToPost)
+        {
+            using UnityWebRequest postBatchMetadataRequest = CreateRequest(baseURL + "/metadata/batches/" + batch_id,
+                RequestType.POST, batchMetadataToPost);
+            yield return postBatchMetadataRequest.SendWebRequest();
+            
+            PrintRequestFailOrSuccess(postBatchMetadataRequest, RequestType.POST);
+        }
+        
+        /// <summary>
+        /// Sends a GET request to the server's /metadata/batches/{batch_id} endpoint to retrieve the metadata for the current batch.
         /// </summary>
         /// <param name="callback">An optional callback function that will receive the response from the server as a string.</param>
         /// <returns>An IEnumerator object to be used in a Coroutine.</returns>
-        private IEnumerator GetPsychometricMeasures(Action<string> callback = null)
+        private IEnumerator GetBatchMetadata(Action<string> callback = null)
         {
-            using UnityWebRequest getRequest = CreateRequest(baseURL + "/psychometrics/measures");
+            using UnityWebRequest getRequest = CreateRequest(baseURL + "/metadata/batches/" + batch_id);
+            yield return getRequest.SendWebRequest();
+            PrintRequestFailOrSuccess(getRequest, RequestType.GET);
+            callback?.Invoke(getRequest.downloadHandler.text);
+        }
+
+        
+        /// <summary>
+        /// Sends a GET request to the "/session" endpoint to retrieve the batch ID.
+        /// </summary>
+        /// <returns>An IEnumerator object that sends the GET request and retrieves the batch ID.</returns>
+        private IEnumerator GetBatchID()
+        {
+            using UnityWebRequest getSessionRequest = CreateRequest(baseURL + "/session");
+            AttachHeader(getSessionRequest, "client_device", client_device);
+            yield return getSessionRequest.SendWebRequest();
+            var deserializedGetRequestData = JsonUtility.FromJson<SessionData>(getSessionRequest.downloadHandler.text);
+            batch_id = deserializedGetRequestData.batch_id;
+            print("The access token is: " + GetAccessToken());
+            print("The Batch ID is: " + batch_id);
+        }
+
+        /// <summary>
+        /// Sends a GET request to the server's /behaviors/performance endpoint to retrieve performance model calculated from the user's raw psychometric response data.
+        /// </summary>
+        /// <param name="callback">An optional callback function that will receive the response from the server as a string.</param>
+        /// <returns>An IEnumerator object to be used in a Coroutine.</returns>
+        private IEnumerator GetPerformanceModel(Action<string> callback = null)
+        {
+            using UnityWebRequest getRequest = CreateRequest(baseURL + "/behaviors/performance");
             AttachHeader(getRequest, "batch_id", batch_id);
             yield return getRequest.SendWebRequest();
             PrintRequestFailOrSuccess(getRequest, RequestType.GET);
@@ -96,29 +206,6 @@ namespace AI.Metaviz.HPL.Demo
             PrintRequestFailOrSuccess(postRequest, RequestType.POST);
             print(eventToPost.ToJson());
             callback?.Invoke(postRequest.downloadHandler.text);
-        }
-
-        /// <summary>
-        /// Reads the access token from the auth.json file and returns it.
-        /// The auth.json file should contain the access token on the first line.
-        /// It should be located in the .metaviz folder in the user's home directory.
-        /// The .metaviz folder should be created if it does not exist.
-        /// The user's home directory is ~/ on Linux and Mac and C:\Users\{username} on Windows.
-        /// </summary>
-        /// <returns> The access token or null if the file does not exist. </returns>
-        private string GetAccessToken()
-        {
-            var userPath = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile);
-            var authPath = $"{userPath}/.metaviz/auth.json";
-            if (File.Exists(authPath))
-            {
-                return File.ReadAllText(authPath).Trim();
-            }
-
-            Debug.LogError(
-                "API Key is null and auth.json does not exist. Please check https://github.com/srcnalt/OpenAI-Unity#saving-your-credentials except use the filepath of .metaviz/authPath.json instead.");
-
-            return null;
         }
 
         /// <summary>
@@ -145,61 +232,6 @@ namespace AI.Metaviz.HPL.Demo
         }
 
         /// <summary>
-        /// Sends a GET request to the "/session" endpoint to retrieve the batch ID.
-        /// </summary>
-        /// <returns>An IEnumerator object that sends the GET request and retrieves the batch ID.</returns>
-        private IEnumerator GetBatchID()
-        {
-            using UnityWebRequest getSessionRequest = CreateRequest(baseURL + "/session");
-            AttachHeader(getSessionRequest, "client_device", client_device);
-            yield return getSessionRequest.SendWebRequest();
-            var deserializedGetRequestData = JsonUtility.FromJson<GetData>(getSessionRequest.downloadHandler.text);
-            batch_id = deserializedGetRequestData.batch_id;
-            print("The access token is: " + GetAccessToken());
-            print("The Batch ID is: " + batch_id);
-        }
-
-        public IEnumerator BeginMetaDataRequestsCoroutine()
-        {
-            yield return StartCoroutine(PostBatchMetadata());
-            StartCoroutine(GetBatchMetadata());
-        }
-
-        private IEnumerator GetBatchMetadata()
-        {
-            using UnityWebRequest getBatchMetadataRequest = CreateRequest(baseURL + batch_metadata_GET_path + batch_id);
-            yield return getBatchMetadataRequest.SendWebRequest();
-
-            PrintRequestFailOrSuccess(getBatchMetadataRequest, RequestType.GET);
-
-            var deserializedGetRequestData =
-                JsonUtility.FromJson<GetData>(getBatchMetadataRequest.downloadHandler.text);
-            batch_metadata = deserializedGetRequestData.batch_metadata;
-
-            // print out batch_metadata
-            if (batch_metadata != null) print("The Batch Metadata is: " + batch_metadata);
-            else print("The Batch Metadata is null");
-            foreach (PropertyDescriptor descriptor in TypeDescriptor.GetProperties(batch_metadata))
-            {
-                string name = descriptor.Name;
-                object value = descriptor.GetValue(batch_metadata);
-                Console.WriteLine("{0}={1}", name, value);
-            }
-        }
-
-        private IEnumerator PostBatchMetadata()
-        {
-            var dataToPost = new PostMetadata(); // TODO: OBTAIN THE DATA WE NEED TO POST
-            using UnityWebRequest postRequest = CreateRequest(baseURL + batch_metadata_GET_path + batch_id,
-                RequestType.POST, dataToPost);
-            yield return postRequest.SendWebRequest();
-
-            PrintRequestFailOrSuccess(postRequest, RequestType.POST);
-
-            var deserializedPostData = JsonUtility.FromJson<PostResult>(postRequest.downloadHandler.text);
-        }
-
-        /// <summary>
         /// Attaches a header to a UnityWebRequest object.
         /// </summary>
         /// <param name="request"> The UnityWebRequest object to which the header will be attached. </param>
@@ -211,7 +243,9 @@ namespace AI.Metaviz.HPL.Demo
         }
 
         /// <summary>
-        /// Gets the device type of the client. This is used to determine which endpoint to use for the /session GET request.
+        /// Gets the device type of the client.
+        /// This is used to determine which endpoint to use for the /session GET request.
+        /// This is also used as a header for the POST request to the /session endpoint.
         /// </summary>
         private void GetClientDevice()
         {
@@ -232,6 +266,51 @@ namespace AI.Metaviz.HPL.Demo
             }
         }
 
+        /// <summary>
+        /// Gets the device platform (Web, Andrious, IOS). This is used for the POST to the /session GET request.
+        /// </summary>
+        /// <returns>Device Platform through the DeviceData.PlatformEnum</returns>
+        private DeviceData.PlatformEnum GetDevicePlatform()
+        {
+            DeviceData.PlatformEnum devicePlatform = DeviceData.PlatformEnum.Web;
+            
+            switch (Application.platform)
+            {
+                case RuntimePlatform.Android:
+                    devicePlatform = DeviceData.PlatformEnum.Android;
+                    break;
+                case RuntimePlatform.IPhonePlayer:
+                    devicePlatform = DeviceData.PlatformEnum.IOS;
+                    break;
+            }
+
+            return devicePlatform;
+        }
+
+        /// <summary>
+        /// Creates the DeviceData object for the POST request to the /session endpoint. 
+        /// </summary>
+        /// <returns>Device Data/returns>
+        private DeviceData GetUserDeviceData()
+        {
+            const float CONVERT_INCH_TO_CM = 2.54F;
+
+            return new DeviceData(
+                id: SystemInfo.deviceUniqueIdentifier,
+                platform: GetDevicePlatform(),
+                isVirtualReality: XRSettings.isDeviceActive,
+                dimCm: new Dimensions(UnitTypeEnum.Centimeters,
+                    Screen.width / Screen.dpi * CONVERT_INCH_TO_CM, Screen.height/Screen.dpi * CONVERT_INCH_TO_CM),
+                dimPx: new Dimensions(UnitTypeEnum.Pixels, Screen.width, Screen.height),
+                pixelsPerPoint: 1F
+            );
+        }
+
+        /// <summary>
+        /// Prints whether the request has failed or successful. If successful, then the body of the request is printed.
+        /// </summary>
+        /// <param name="request">The request that is being sent</param>
+        /// <param name="type">Determines the type of the rest bia the RequestType Enum</param>
         private void PrintRequestFailOrSuccess(UnityWebRequest request, RequestType type)
         {
             if ((request.result == UnityWebRequest.Result.ConnectionError) ||
@@ -250,37 +329,17 @@ namespace AI.Metaviz.HPL.Demo
             print("");
         }
     }
-
-
+    
     public enum RequestType
     {
         GET = 0,
         POST = 1
     }
 
-    public class GetData
+    public class SessionData
     {
         // Ensure no getter / setter
         // Typecase has to match exactly
         public string batch_id;
-        public object batch_metadata;
-        public string success;
-    }
-
-    [Serializable]
-    public class PostMetadata // TODO: DUMMY CLASS 
-    {
-        public object metadata = null;
-        public string update_time = "2002-10-22T09:39:36.694Z";
-    }
-
-    public class PostResult
-    {
-        public string success { get; set; }
-
-        public override string ToString()
-        {
-            return "success: " + success;
-        }
     }
 }

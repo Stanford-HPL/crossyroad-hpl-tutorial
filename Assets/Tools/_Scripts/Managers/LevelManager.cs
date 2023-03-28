@@ -37,8 +37,13 @@ public class LevelManager : MonoBehaviour
     /// Feel free to make other functions like this if utilizing buttons or similar
     /// that do not allow updating of GameState
     /// </summary>
-    public void SwapToGameSelectorScene()
+    public void SwapToQuestionnaireScene()
     {
         GameManager.Instance.UpdateGameState(GameManager.GameState.Questionnaire);
+    }
+    
+    public void SwapToScoreScene()
+    {
+        GameManager.Instance.UpdateGameState(GameManager.GameState.Scores);
     }
 }
