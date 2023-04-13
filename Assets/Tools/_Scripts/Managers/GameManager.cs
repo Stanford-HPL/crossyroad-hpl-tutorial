@@ -128,7 +128,6 @@ public class GameManager : MonoBehaviour
         GameTargetDistractorTask.GetVpiScore((vpiScore) =>
         {
             VPIManager.Instance.ParseVPIScore(vpiScore);
-            print("VPI Score: " + vpiScore);
         });
     }
     

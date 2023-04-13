@@ -127,8 +127,7 @@ namespace AI.Metaviz.HPL.Demo
             AttachHeader(postDeviceRequest, "batch_id", batch_id);
             AttachHeader(postDeviceRequest, "client_device", client_device);
             yield return postDeviceRequest.SendWebRequest();
-            PrintRequestFailOrSuccess(postDeviceRequest, RequestType.POST);
-            print(deviceDataToPost.ToJson());
+            AssertRequestSuccessful(postDeviceRequest, RequestType.POST);
             callback?.Invoke(postDeviceRequest.downloadHandler.text);
         }
         
@@ -144,7 +143,7 @@ namespace AI.Metaviz.HPL.Demo
                 RequestType.POST, batchMetadataToPost);
             yield return postBatchMetadataRequest.SendWebRequest();
             
-            PrintRequestFailOrSuccess(postBatchMetadataRequest, RequestType.POST);
+            AssertRequestSuccessful(postBatchMetadataRequest, RequestType.POST);
         }
         
         /// <summary>
@@ -156,7 +155,7 @@ namespace AI.Metaviz.HPL.Demo
         {
             using UnityWebRequest getRequest = CreateRequest(baseURL + "/metadata/batches/" + batch_id);
             yield return getRequest.SendWebRequest();
-            PrintRequestFailOrSuccess(getRequest, RequestType.GET);
+            AssertRequestSuccessful(getRequest, RequestType.GET);
             callback?.Invoke(getRequest.downloadHandler.text);
         }
 
@@ -172,8 +171,6 @@ namespace AI.Metaviz.HPL.Demo
             yield return getSessionRequest.SendWebRequest();
             var deserializedGetRequestData = JsonUtility.FromJson<SessionData>(getSessionRequest.downloadHandler.text);
             batch_id = deserializedGetRequestData.batch_id;
-            print("The access token is: " + GetAccessToken());
-            print("The Batch ID is: " + batch_id);
         }
 
         /// <summary>
@@ -186,7 +183,7 @@ namespace AI.Metaviz.HPL.Demo
             using UnityWebRequest getRequest = CreateRequest(baseURL + "/behaviors/performance");
             AttachHeader(getRequest, "batch_id", batch_id);
             yield return getRequest.SendWebRequest();
-            PrintRequestFailOrSuccess(getRequest, RequestType.GET);
+            AssertRequestSuccessful(getRequest, RequestType.GET);
             callback?.Invoke(getRequest.downloadHandler.text);
         }
 
@@ -203,8 +200,7 @@ namespace AI.Metaviz.HPL.Demo
                 RequestType.POST, eventToPost);
             AttachHeader(postRequest, "batch_id", batch_id);
             yield return postRequest.SendWebRequest();
-            PrintRequestFailOrSuccess(postRequest, RequestType.POST);
-            print(eventToPost.ToJson());
+            AssertRequestSuccessful(postRequest, RequestType.POST);
             callback?.Invoke(postRequest.downloadHandler.text);
         }
 
@@ -290,7 +286,7 @@ namespace AI.Metaviz.HPL.Demo
         /// <summary>
         /// Creates the DeviceData object for the POST request to the /session endpoint. 
         /// </summary>
-        /// <returns>Device Data/returns>
+        /// <returns>Device Data</returns>
         private DeviceData GetUserDeviceData()
         {
             const float CONVERT_INCH_TO_CM = 2.54F;
@@ -307,26 +303,19 @@ namespace AI.Metaviz.HPL.Demo
         }
 
         /// <summary>
-        /// Prints whether the request has failed or successful. If successful, then the body of the request is printed.
+        /// Asserts whether the request has failed or successful. If failed, then the error is logged in the console.
         /// </summary>
         /// <param name="request">The request that is being sent</param>
         /// <param name="type">Determines the type of the rest bia the RequestType Enum</param>
-        private void PrintRequestFailOrSuccess(UnityWebRequest request, RequestType type)
+        private void AssertRequestSuccessful(UnityWebRequest request, RequestType type)
         {
             if ((request.result == UnityWebRequest.Result.ConnectionError) ||
                 (request.result == UnityWebRequest.Result.ProtocolError) ||
                 (request.result == UnityWebRequest.Result.DataProcessingError))
             {
-                print(type + "  Request Failed: " + request.result);
+                // log error
+				Debug.LogError(request.result);
             }
-            else
-            {
-                print(type + " Request Successful: ");
-            }
-
-            // print what is returned in body
-            print(request.downloadHandler.text);
-            print("");
         }
     }
     

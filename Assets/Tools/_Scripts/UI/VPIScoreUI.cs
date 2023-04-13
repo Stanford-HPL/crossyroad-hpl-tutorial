@@ -38,7 +38,6 @@ namespace UI
             MetavizAPIManager.Instance.RawEventList.GetVpiScore(vpiScoreCallback: vpiScore =>
             {
                 VPIManager.Instance.ParseVPIScore(vpiScore);
-                print("VPI Score: " + vpiScore);
                 UpdateUI();
             });
         }

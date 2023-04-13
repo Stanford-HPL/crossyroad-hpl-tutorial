@@ -12,8 +12,7 @@ namespace AI.Metaviz.HPL.Demo
         public void AddEvent(Event parentEvent, List<Event> childrenEvent, int curAlienID)
         {
             Event lastChildEvent;
-
-            Debug.Log(childrenEvent.Count);
+            
             if (childrenEvent.Count != 0)
             {
                 lastChildEvent = childrenEvent[childrenEvent.Count - 1];
@@ -24,7 +23,6 @@ namespace AI.Metaviz.HPL.Demo
             }
             
             string parentID = GetParentID(lastChildEvent, curAlienID);
-            Debug.Log(parentID);
             parentEvent.ParentId = parentID;
             _eventList.Add(parentEvent);
             foreach (var childEvent in childrenEvent)
