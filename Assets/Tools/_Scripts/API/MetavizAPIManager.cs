@@ -13,12 +13,11 @@ namespace AI.Metaviz.HPL.Demo
     {
         public static MetavizAPIManager Instance;
         
-        public TargetDistractorTask RawEventList = new();
+        public readonly TargetDistractorTask RawEventList = new();
 
-        private const string baseURL = "https://insights.platform.hpl.stanford.edu";
-
-        private string batch_id = "use GetBatchID to obtain a new unique one";
-        private string client_device;
+        private const string BaseURL = "https://insights.platform.hpl.stanford.edu";
+        private string _batchID = "use GetBatchID to obtain a new unique one";
+        private string _clientDevice;
         public string ApiKey { get; set; }
 
         /// <summary>
@@ -122,12 +121,12 @@ namespace AI.Metaviz.HPL.Demo
         /// <returns>An IEnumerator object to be used in a Coroutine.</returns>
         private IEnumerator PostDevice(DeviceData deviceDataToPost, Action<string> callback = null)
         {
-            using UnityWebRequest postDeviceRequest = CreateRequest(baseURL + "/device",
-                RequestType.POST, deviceDataToPost);
-            AttachHeader(postDeviceRequest, "batch_id", batch_id);
-            AttachHeader(postDeviceRequest, "client_device", client_device);
+            using UnityWebRequest postDeviceRequest = CreateRequest(BaseURL + "/device",
+                RequestType.Post, deviceDataToPost);
+            AttachHeader(postDeviceRequest, "batch_id", _batchID);
+            AttachHeader(postDeviceRequest, "client_device", _clientDevice);
             yield return postDeviceRequest.SendWebRequest();
-            AssertRequestSuccessful(postDeviceRequest, RequestType.POST);
+            AssertRequestSuccessful(postDeviceRequest, RequestType.Post);
             callback?.Invoke(postDeviceRequest.downloadHandler.text);
         }
         
@@ -139,11 +138,11 @@ namespace AI.Metaviz.HPL.Demo
         /// <returns>An IEnumerator object to be used in a Coroutine.</returns>
         public IEnumerator PostBatchMetadata(BatchMetadata batchMetadataToPost)
         {
-            using UnityWebRequest postBatchMetadataRequest = CreateRequest(baseURL + "/metadata/batches/" + batch_id,
-                RequestType.POST, batchMetadataToPost);
+            using UnityWebRequest postBatchMetadataRequest = CreateRequest(BaseURL + "/metadata/batches/" + _batchID,
+                RequestType.Post, batchMetadataToPost);
             yield return postBatchMetadataRequest.SendWebRequest();
             
-            AssertRequestSuccessful(postBatchMetadataRequest, RequestType.POST);
+            AssertRequestSuccessful(postBatchMetadataRequest, RequestType.Post);
         }
         
         /// <summary>
@@ -153,9 +152,9 @@ namespace AI.Metaviz.HPL.Demo
         /// <returns>An IEnumerator object to be used in a Coroutine.</returns>
         private IEnumerator GetBatchMetadata(Action<string> callback = null)
         {
-            using UnityWebRequest getRequest = CreateRequest(baseURL + "/metadata/batches/" + batch_id);
+            using UnityWebRequest getRequest = CreateRequest(BaseURL + "/metadata/batches/" + _batchID);
             yield return getRequest.SendWebRequest();
-            AssertRequestSuccessful(getRequest, RequestType.GET);
+            AssertRequestSuccessful(getRequest, RequestType.Get);
             callback?.Invoke(getRequest.downloadHandler.text);
         }
 
@@ -166,11 +165,11 @@ namespace AI.Metaviz.HPL.Demo
         /// <returns>An IEnumerator object that sends the GET request and retrieves the batch ID.</returns>
         private IEnumerator GetBatchID()
         {
-            using UnityWebRequest getSessionRequest = CreateRequest(baseURL + "/session");
-            AttachHeader(getSessionRequest, "client_device", client_device);
+            using UnityWebRequest getSessionRequest = CreateRequest(BaseURL + "/session");
+            AttachHeader(getSessionRequest, "client_device", _clientDevice);
             yield return getSessionRequest.SendWebRequest();
             var deserializedGetRequestData = JsonUtility.FromJson<SessionData>(getSessionRequest.downloadHandler.text);
-            batch_id = deserializedGetRequestData.batch_id;
+            _batchID = deserializedGetRequestData.batch_id;
         }
 
         /// <summary>
@@ -180,10 +179,10 @@ namespace AI.Metaviz.HPL.Demo
         /// <returns>An IEnumerator object to be used in a Coroutine.</returns>
         private IEnumerator GetPerformanceModel(Action<string> callback = null)
         {
-            using UnityWebRequest getRequest = CreateRequest(baseURL + "/behaviors/performance");
-            AttachHeader(getRequest, "batch_id", batch_id);
+            using UnityWebRequest getRequest = CreateRequest(BaseURL + "/behaviors/performance");
+            AttachHeader(getRequest, "batch_id", _batchID);
             yield return getRequest.SendWebRequest();
-            AssertRequestSuccessful(getRequest, RequestType.GET);
+            AssertRequestSuccessful(getRequest, RequestType.Get);
             callback?.Invoke(getRequest.downloadHandler.text);
         }
 
@@ -196,11 +195,11 @@ namespace AI.Metaviz.HPL.Demo
         /// <returns>An IEnumerator object to be used in a Coroutine.</returns>
         private IEnumerator PostPsychometrics(EventArray eventToPost, Action<string> callback = null)
         {
-            using UnityWebRequest postRequest = CreateRequest(baseURL + "/psychometrics/stimuli-response",
-                RequestType.POST, eventToPost);
-            AttachHeader(postRequest, "batch_id", batch_id);
+            using UnityWebRequest postRequest = CreateRequest(BaseURL + "/psychometrics/stimuli-response",
+                RequestType.Post, eventToPost);
+            AttachHeader(postRequest, "batch_id", _batchID);
             yield return postRequest.SendWebRequest();
-            AssertRequestSuccessful(postRequest, RequestType.POST);
+            AssertRequestSuccessful(postRequest, RequestType.Post);
             callback?.Invoke(postRequest.downloadHandler.text);
         }
 
@@ -211,7 +210,7 @@ namespace AI.Metaviz.HPL.Demo
         /// <param name="type">The HTTP method to use (default is GET).</param>
         /// <param name="data">The data to send in the request body (if applicable).</param>
         /// <returns>A UnityWebRequest object configured with the specified parameters.</returns>
-        private UnityWebRequest CreateRequest(string path, RequestType type = RequestType.GET, object data = null)
+        private UnityWebRequest CreateRequest(string path, RequestType type = RequestType.Get, object data = null)
         {
             var request = new UnityWebRequest(path, type.ToString());
 
@@ -245,42 +244,27 @@ namespace AI.Metaviz.HPL.Demo
         /// </summary>
         private void GetClientDevice()
         {
-            switch (SystemInfo.deviceType)
+            _clientDevice = SystemInfo.deviceType switch
             {
-                case DeviceType.Console:
-                    client_device = "Console";
-                    break;
-                case DeviceType.Desktop:
-                    client_device = "Desktop";
-                    break;
-                case DeviceType.Handheld:
-                    client_device = "Handheld";
-                    break;
-                default:
-                    client_device = "Unknown";
-                    break;
-            }
+                DeviceType.Console => "Console",
+                DeviceType.Desktop => "Desktop",
+                DeviceType.Handheld => "Handheld",
+                _ => "Unknown"
+            };
         }
 
         /// <summary>
-        /// Gets the device platform (Web, Andrious, IOS). This is used for the POST to the /session GET request.
+        /// Gets the device platform (Web, Android, IOS). This is used for the POST to the /session GET request.
         /// </summary>
         /// <returns>Device Platform through the DeviceData.PlatformEnum</returns>
         private DeviceData.PlatformEnum GetDevicePlatform()
         {
-            DeviceData.PlatformEnum devicePlatform = DeviceData.PlatformEnum.Web;
-            
-            switch (Application.platform)
+            return Application.platform switch
             {
-                case RuntimePlatform.Android:
-                    devicePlatform = DeviceData.PlatformEnum.Android;
-                    break;
-                case RuntimePlatform.IPhonePlayer:
-                    devicePlatform = DeviceData.PlatformEnum.IOS;
-                    break;
-            }
-
-            return devicePlatform;
+                RuntimePlatform.Android => DeviceData.PlatformEnum.Android,
+                RuntimePlatform.IPhonePlayer => DeviceData.PlatformEnum.IOS,
+                _ => DeviceData.PlatformEnum.Web
+            };
         }
 
         /// <summary>
@@ -289,14 +273,14 @@ namespace AI.Metaviz.HPL.Demo
         /// <returns>Device Data</returns>
         private DeviceData GetUserDeviceData()
         {
-            const float CONVERT_INCH_TO_CM = 2.54F;
+            const float convertInchToCm = 2.54F;
 
             return new DeviceData(
                 id: SystemInfo.deviceUniqueIdentifier,
                 platform: GetDevicePlatform(),
                 isVirtualReality: XRSettings.isDeviceActive,
                 dimCm: new Dimensions(UnitTypeEnum.Centimeters,
-                    Screen.width / Screen.dpi * CONVERT_INCH_TO_CM, Screen.height/Screen.dpi * CONVERT_INCH_TO_CM),
+                    Screen.width / Screen.dpi * convertInchToCm, Screen.height/Screen.dpi * convertInchToCm),
                 dimPx: new Dimensions(UnitTypeEnum.Pixels, Screen.width, Screen.height),
                 pixelsPerPoint: 1F
             );
@@ -309,9 +293,7 @@ namespace AI.Metaviz.HPL.Demo
         /// <param name="type">Determines the type of the rest bia the RequestType Enum</param>
         private void AssertRequestSuccessful(UnityWebRequest request, RequestType type)
         {
-            if ((request.result == UnityWebRequest.Result.ConnectionError) ||
-                (request.result == UnityWebRequest.Result.ProtocolError) ||
-                (request.result == UnityWebRequest.Result.DataProcessingError))
+            if (request.result is UnityWebRequest.Result.ConnectionError or UnityWebRequest.Result.ProtocolError or UnityWebRequest.Result.DataProcessingError)
             {
                 // log error
 				Debug.LogError(request.result);
@@ -321,14 +303,17 @@ namespace AI.Metaviz.HPL.Demo
     
     public enum RequestType
     {
-        GET = 0,
-        POST = 1
+        Get = 0,
+        Post = 1
     }
 
+    // ReSharper disable once ClassNeverInstantiated.Global
     public class SessionData
     {
         // Ensure no getter / setter
-        // Typecase has to match exactly
+        // Uppercase / lowercase has to match exactly
+        // ReSharper disable once InconsistentNaming
+        // ReSharper disable once UnassignedField.Global
         public string batch_id;
     }
 }
