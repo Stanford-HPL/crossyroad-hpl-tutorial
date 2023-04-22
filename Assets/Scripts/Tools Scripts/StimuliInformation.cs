@@ -98,7 +98,7 @@ namespace AI.Metaviz.HPL.Demo
                 {
                     SetUserInput(true);
                     _childrenEvent.Add(MakeEventWithoutParentID(Event.EventTypeEnum.Child));
-                    MetavizAPIManager.Instance.RawEventList.AddEvent(_parentEvent, _childrenEvent, _curId);
+                    TargetDistractorManager.Instance.AddEvent(_parentEvent, _childrenEvent, _curId);
                 }
             }
         }
@@ -117,7 +117,7 @@ namespace AI.Metaviz.HPL.Demo
                 {
                     SetUserInput(true);
                     _childrenEvent.Add(MakeEventWithoutParentID(Event.EventTypeEnum.Child));
-                    MetavizAPIManager.Instance.RawEventList.AddEvent(_parentEvent, _childrenEvent, _curId);
+                    TargetDistractorManager.Instance.AddEvent(_parentEvent, _childrenEvent, _curId);
                 }
             }
         }
@@ -133,7 +133,7 @@ namespace AI.Metaviz.HPL.Demo
             {
                 _interactedOnce = true;
                 _childrenEvent.Add(MakeEventWithoutParentID(Event.EventTypeEnum.Child));
-                MetavizAPIManager.Instance.RawEventList.AddEvent(_parentEvent, _childrenEvent, _curId);
+                TargetDistractorManager.Instance.AddEvent(_parentEvent, _childrenEvent, _curId);
             }
         }
 
@@ -147,8 +147,7 @@ namespace AI.Metaviz.HPL.Demo
             {
                 _interactedOnce = true;
                 _childrenEvent.Add(MakeEventWithoutParentID(Event.EventTypeEnum.Child));
-                MetavizAPIManager.Instance.RawEventList.AddEvent(_parentEvent, _childrenEvent, _curId);
-                print("player died");
+                TargetDistractorManager.Instance.AddEvent(_parentEvent, _childrenEvent, _curId);
             }
         }
 

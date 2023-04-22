@@ -1,14 +1,27 @@
 using System;
 using System.Collections.Generic;
-using System.Threading.Tasks;
 using UnityEngine;
 
 namespace AI.Metaviz.HPL.Demo
 {
-    public class TargetDistractorTask
+    public class TargetDistractorManager : MonoBehaviour
     {
+        public static TargetDistractorManager Instance;
         private List<Event> _eventList = new();
-
+        
+        /// <summary>
+        /// Enables the MetavizAPIManager to persist across scenes as a singleton.
+        /// </summary>
+        private void Awake()
+        {
+            if (Instance == null)
+            {
+                Instance = this;
+            }
+            else Destroy(gameObject);
+        }
+        
+        
         public void AddEvent(Event parentEvent, List<Event> childrenEvent, int curAlienID)
         {
             Event lastChildEvent;

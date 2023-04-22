@@ -35,7 +35,7 @@ namespace UI
 
         private void GetVPIScore()
         {
-            MetavizAPIManager.Instance.RawEventList.GetVpiScore(vpiScoreCallback: vpiScore =>
+            TargetDistractorManager.Instance.GetVpiScore(vpiScoreCallback: vpiScore =>
             {
                 VPIManager.Instance.ParseVPIScore(vpiScore);
                 UpdateUI();

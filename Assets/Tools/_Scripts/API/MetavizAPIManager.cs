@@ -12,8 +12,6 @@ namespace AI.Metaviz.HPL.Demo
     public class MetavizAPIManager : MonoBehaviour
     {
         public static MetavizAPIManager Instance;
-        
-        public readonly TargetDistractorTask RawEventList = new();
 
         private const string BaseURL = "https://insights.platform.hpl.stanford.edu";
         private string _batchID = "use GetBatchID to obtain a new unique one";

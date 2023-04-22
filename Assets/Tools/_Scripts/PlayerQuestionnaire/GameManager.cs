@@ -14,8 +14,6 @@ public class GameManager : MonoBehaviour
     public GameState State { get; private set; }
     public static event Action<GameState> OnGameStateChanged;
 
-    public TargetDistractorTask GameTargetDistractorTask = new();
-    
     /// <summary>
     /// The GameStates that the game is currently in. Make sure to update GameState each time a new GameState is reached.
     /// Use FILL_IN_GAME_STATE when in Unity Editor and making a prefab, and if this GameState is ever launched,
@@ -123,11 +121,6 @@ public class GameManager : MonoBehaviour
     {
         print("GM: End");
         LevelManager.Instance.LoadNewScene("Ending");
-        
-        GameTargetDistractorTask.GetVpiScore((vpiScore) =>
-        {
-            VPIManager.Instance.ParseVPIScore(vpiScore);
-        });
     }
     
     /// <summary>
@@ -136,7 +129,6 @@ public class GameManager : MonoBehaviour
     /// </summary>
     private void HandleScores()
     {
-        print("GM: Scores");
         LevelManager.Instance.LoadNewScene("Scores");
     }
     
