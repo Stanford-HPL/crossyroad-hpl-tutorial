@@ -1,13 +1,12 @@
-using System;
 using System.Collections.Generic;
-using UI;
+using UnityEngine;
 
-namespace _Scripts.DataPersistence
+namespace UI
 {
-    [Serializable]
-    public class GamePreferences
+    public class QuestionnaireHandler : MonoBehaviour
     {
-        public QuestionOptions[] questionaire = {
+        [SerializeField] private IntroQuestionnaire introQuestionnaire;
+        private QuestionOptions[] _questionOptions = {
             new()
             {
                 Question = "Hours of game play per day",
@@ -34,5 +33,24 @@ namespace _Scripts.DataPersistence
                 AnswerChoices = new List<string>{"1 cup", "2 cups", "3 cups", "4 cups", "5 cups", "6 cups", "7 cups", "8+ cups"}
             },
         };
+
+        /// <summary>
+        /// Loads the questions and answers from the JSON 
+        /// </summary>
+        private void Start()
+        {
+            HandleQuestionnaire(_questionOptions);
+        }
+
+        /// <summary>
+        /// Fills in the Questionnaire QuestionOptionsQueue with all the questionOptions asked.
+        /// </summary>
+        /// <param name="questionOptions"></param>
+        private void HandleQuestionnaire(QuestionOptions[] questionOptions)
+        {
+            introQuestionnaire.SetQuestionOptionsQueue(questionOptions);
+        }
+        
     }
 }
+

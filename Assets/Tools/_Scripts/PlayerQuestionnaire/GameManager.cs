@@ -27,7 +27,6 @@ public class GameManager : MonoBehaviour
         Game,
         End,
         Scores,
-        
         FILL_IN_GAME_STATE,
     }
 

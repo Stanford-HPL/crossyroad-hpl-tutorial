@@ -18,6 +18,7 @@ namespace AI.Metaviz.HPL.Demo
         private const string BaseURL = "https://insights.platform.hpl.stanford.edu";
         private string _batchID = "use GetBatchID to obtain a new unique one";
         private string _clientDevice;
+        
         public string ApiKey { get; set; }
 
         /// <summary>
@@ -96,8 +97,7 @@ namespace AI.Metaviz.HPL.Demo
                 return File.ReadAllText(authPath).Trim();
             }
 
-            Debug.LogError(
-                "API Key is null and auth.json does not exist. Please check https://github.com/srcnalt/OpenAI-Unity#saving-your-credentials except use the filepath of .metaviz/authPath.json instead.");
+            Debug.LogError("API Key is null and auth.json does not exist. Please check https://github.com/srcnalt/OpenAI-Unity#saving-your-credentials except use the filepath of .metaviz/authPath.json instead.");
 
             return null;
         }

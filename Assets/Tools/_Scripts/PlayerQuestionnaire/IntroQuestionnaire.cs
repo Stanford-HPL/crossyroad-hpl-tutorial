@@ -3,6 +3,7 @@ using MetricCollection;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
+using QuestionnaireMetrics = MetricCollection.QuestionnaireMetrics;
 
 namespace UI
 {
@@ -66,7 +67,7 @@ namespace UI
                 }
                 else
                 {
-                    var metric = new MetricInformation.QuestionnaireMetrics(questionText.text,   dropDown.options[dropDown.value].text); 
+                    var metric = new QuestionnaireMetrics(questionText.text,   dropDown.options[dropDown.value].text); 
                     MetricCollectionManager.Instance.AppendToQuestionnaireMetricsList(metric);
                 }
                 SetAnswerChoices(_curQuestionOption);

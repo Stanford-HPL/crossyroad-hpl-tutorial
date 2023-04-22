@@ -7,7 +7,7 @@ namespace MetricCollection
     {
         public static MetricCollectionManager Instance;
         
-        public List<MetricInformation.QuestionnaireMetrics> QuestionnaireMetricsList;
+        public List<QuestionnaireMetrics> QuestionnaireMetricsList;
 
         /// <summary>
         /// Makes GameManager a singleton
@@ -26,14 +26,14 @@ namespace MetricCollection
         /// </summary>
         private void Start()
         {
-            QuestionnaireMetricsList = new List<MetricInformation.QuestionnaireMetrics>();
+            QuestionnaireMetricsList = new List<QuestionnaireMetrics>();
         }
 
         /// <summary>
         /// Takes questionMetrics and adds to the QuestionMetricsList
         /// </summary>
         /// <param name="questionnaireMetrics"></param>
-        public void AppendToQuestionnaireMetricsList(MetricInformation.QuestionnaireMetrics questionnaireMetrics)
+        public void AppendToQuestionnaireMetricsList(QuestionnaireMetrics questionnaireMetrics)
         {
             QuestionnaireMetricsList.Add(questionnaireMetrics);
         }
