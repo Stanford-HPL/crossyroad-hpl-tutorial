@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -77,13 +78,15 @@ namespace AI.Metaviz.HPL.Demo
         
         public void GetVpiScore(Action<String> vpiScoreCallback = null)
         {
-            MetavizAPIManager.Instance.BeginPostPsychometrics(new EventArray(_eventList), callback: (result) =>
-            {
-                MetavizAPIManager.Instance.BeginGetPerformanceModel(callback: (getResult) =>
+            StartCoroutine(MetavizAPIManager.Instance.PostPsychometrics(new EventArray(_eventList),
+                callback: (result) =>
                 {
-                    vpiScoreCallback?.Invoke(getResult);
-                });
-            });
+                    StartCoroutine(MetavizAPIManager.Instance.GetPerformanceModel(callback: (getResult) =>
+                    {
+                        vpiScoreCallback?.Invoke(getResult);
+                    }));
+                }));
+            
         }
     }
 }

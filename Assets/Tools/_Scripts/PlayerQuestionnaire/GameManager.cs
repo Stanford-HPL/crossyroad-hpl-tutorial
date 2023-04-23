@@ -149,6 +149,6 @@ public class GameManager : MonoBehaviour
          
         BatchMetadata batchMetadata = new BatchMetadata(metadata: metaData, updateTime: DateTime.Now);
         yield return StartCoroutine(MetavizAPIManager.Instance.PostBatchMetadata(batchMetadata));
-        MetavizAPIManager.Instance.BeginGetBatchMetadata(callback);
+        MetavizAPIManager.Instance.GetBatchMetadata(callback);
     }
 }
