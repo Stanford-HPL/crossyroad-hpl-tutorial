@@ -103,10 +103,12 @@ public class GameManager : MonoBehaviour
     /// GameState is changed to GameSelector
     /// </summary>
     private void HandleGameSelector()
-     {
+    {
          print("GM: Game Selector");
-         StartCoroutine(PostAndGetBatchMetadata());
-     }
+         StartCoroutine(PostAndGetBatchMetadata( (batchMetadata) =>
+             print("BatchMetadata: " + batchMetadata)
+             ));
+    }
 
     private void HandleGame()
     {
@@ -149,6 +151,6 @@ public class GameManager : MonoBehaviour
          
         BatchMetadata batchMetadata = new BatchMetadata(metadata: metaData, updateTime: DateTime.Now);
         yield return StartCoroutine(MetavizAPIManager.Instance.PostBatchMetadata(batchMetadata));
-        MetavizAPIManager.Instance.GetBatchMetadata(callback);
+        StartCoroutine(MetavizAPIManager.Instance.GetBatchMetadata(callback));
     }
 }

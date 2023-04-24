@@ -71,22 +71,31 @@ namespace AI.Metaviz.HPL.Demo
         {
             yield return StartCoroutine(GetBatchID());
             DeviceData deviceData = GetUserDeviceData();
-            PostDevice(deviceData);
+            StartCoroutine(PostDevice(deviceData));
         }
         
-        // ReSharper disable Unity.PerformanceAnalysis
         /// <summary>
-        /// Posts Device Data to the server's /device endpoint via a POST request using a UnityWebRequest object.
+        /// Posts raw stimuli-response psychometric data to the server's /psychometrics/stimuli-response endpoint via a POST request using a UnityWebRequest object.
         /// The result of the post is passed to an optional callback function.
         /// </summary>
-        /// <param name="deviceDataToPost">The DeviceData object to be posted to the endpoint.</param>
+        /// <param name="eventToPost">The Event object to be posted to the endpoint.</param>
         /// <param name="callback">An optional callback function that will receive the PostResult object returned from the server.</param>
         /// <returns>An IEnumerator object to be used in a Coroutine.</returns>
-        public IEnumerator PostDevice(DeviceData deviceDataToPost, Action<string> callback = null)
+        public IEnumerator PostPsychometrics(EventArray eventToPost, Action<string> callback = null)
         {
-            yield return  StartCoroutine(RequestEndpoint("/device", RequestType.Post, deviceDataToPost, callback));
+            yield return RequestEndpoint("/psychometrics/stimuli-response", RequestType.Post, eventToPost, callback);
         }
         
+        /// <summary>
+        /// Sends a GET request to the server's /behaviors/performance endpoint to retrieve performance model calculated from the user's raw psychometric response data.
+        /// </summary>
+        /// <param name="callback">An optional callback function that will receive the response from the server as a string.</param>
+        /// <returns>An IEnumerator object to be used in a Coroutine.</returns>
+        public IEnumerator GetPerformanceModel(Action<string> callback = null)
+        {
+            yield return StartCoroutine(RequestEndpoint("/behaviors/performance", RequestType.Get, null, callback));
+        }
+
         /// <summary>
         /// Posts BatchMetadata to the server's /metadata/batches/{batch_id} endpoint via a POST request using a UnityWebRequest object.
         /// The result of the post is passed to an optional callback function.
@@ -106,34 +115,33 @@ namespace AI.Metaviz.HPL.Demo
         /// <returns>An IEnumerator object to be used in a Coroutine.</returns>
         public IEnumerator GetBatchMetadata(Action<string> callback = null)
         {
-            yield return  StartCoroutine(RequestEndpoint("/metadata/batches/" + _batchID, RequestType.Get, callback));
+            yield return  StartCoroutine(RequestEndpoint("/metadata/batches/" + _batchID, RequestType.Get, null, callback));
         }
 
+        // ReSharper disable Unity.PerformanceAnalysis
         /// <summary>
-        /// Sends a GET request to the server's /behaviors/performance endpoint to retrieve performance model calculated from the user's raw psychometric response data.
-        /// </summary>
-        /// <param name="callback">An optional callback function that will receive the response from the server as a string.</param>
-        /// <returns>An IEnumerator object to be used in a Coroutine.</returns>
-        public IEnumerator GetPerformanceModel(Action<string> callback = null)
-        {
-            yield return StartCoroutine(RequestEndpoint("/behaviors/performance", RequestType.Get, callback));
-        }
-
-        /// <summary>
-        /// Posts raw stimuli-response psychometric data to the server's /psychometrics/stimuli-response endpoint via a POST request using a UnityWebRequest object.
+        /// Posts Device Data to the server's /device endpoint via a POST request using a UnityWebRequest object.
         /// The result of the post is passed to an optional callback function.
         /// </summary>
-        /// <param name="eventToPost">The Event object to be posted to the endpoint.</param>
+        /// <param name="deviceDataToPost">The DeviceData object to be posted to the endpoint.</param>
         /// <param name="callback">An optional callback function that will receive the PostResult object returned from the server.</param>
         /// <returns>An IEnumerator object to be used in a Coroutine.</returns>
-        public IEnumerator PostPsychometrics(EventArray eventToPost, Action<string> callback = null)
+        private IEnumerator PostDevice(DeviceData deviceDataToPost, Action<string> callback = null)
         {
-            yield return RequestEndpoint("/psychometrics/stimuli-response", RequestType.Post, eventToPost, callback);
+            yield return  StartCoroutine(RequestEndpoint("/device", RequestType.Post, deviceDataToPost, callback));
         }
         
+        /// <summary>
+        /// Sends a request to the specified endpoint with the given HTTP method and data (if provided), and invokes the specified callback function with the response text.
+        /// </summary>
+        /// <param name="endpoint">The endpoint URL to send the request to.</param>
+        /// <param name="type">The HTTP method to use.</param>
+        /// <param name="data">The data to send in the request body (if applicable).</param>
+        /// <param name="callback">An optional callback function that will receive the PostResult object returned from the server.</param>
+        /// <returns>An IEnumerator object for use with Unity's coroutine system.</returns>
         private IEnumerator RequestEndpoint(string endpoint, RequestType type,  object data = null, Action<string> callback = null)
         {
-            using UnityWebRequest request = CreateRequest(BaseURL + endpoint);
+            using UnityWebRequest request = CreateRequest(BaseURL + endpoint, type, data);
             yield return request.SendWebRequest();
             AssertRequestSuccessful(request, type);
             callback?.Invoke(request.downloadHandler.text);
@@ -146,7 +154,7 @@ namespace AI.Metaviz.HPL.Demo
         /// <param name="type">The HTTP method to use (default is GET).</param>
         /// <param name="data">The data to send in the request body (if applicable).</param>
         /// <returns>A UnityWebRequest object configured with the specified parameters.</returns>
-        private UnityWebRequest CreateRequest(string path, RequestType type = RequestType.Get, object data = null)
+        private UnityWebRequest CreateRequest(string path, RequestType type, object data = null)
         {
             var request = new UnityWebRequest(path, type.ToString());
 
@@ -182,7 +190,7 @@ namespace AI.Metaviz.HPL.Demo
         /// <returns>An IEnumerator object that sends the GET request and retrieves the batch ID.</returns>
         private IEnumerator GetBatchID()
         {
-            using UnityWebRequest getSessionRequest = CreateRequest(BaseURL + "/session");
+            using UnityWebRequest getSessionRequest = CreateRequest(BaseURL + "/session", RequestType.Get);
             yield return getSessionRequest.SendWebRequest();
             var deserializedGetRequestData = JsonUtility.FromJson<SessionData>(getSessionRequest.downloadHandler.text);
             _batchID = deserializedGetRequestData.batch_id;
