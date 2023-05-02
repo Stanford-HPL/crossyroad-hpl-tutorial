@@ -105,7 +105,7 @@ namespace AI.Metaviz.HPL.Demo
         /// <returns>An IEnumerator object to be used in a Coroutine.</returns>
         public IEnumerator PostBatchMetadata(BatchMetadata batchMetadataToPost, Action<string> callback = null)
         {
-            yield return  StartCoroutine(RequestEndpoint("/metadata/batches/" + _batchID, RequestType.Post, batchMetadataToPost, callback));
+            yield return StartCoroutine(RequestEndpoint("/metadata/batches/" + _batchID, RequestType.Post, batchMetadataToPost, callback));
         }
         
         /// <summary>

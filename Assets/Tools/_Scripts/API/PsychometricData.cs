@@ -11,6 +11,7 @@ using System.Runtime.Serialization;
 using System.Text;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
+using UnityEngine;
 
 namespace AI.Metaviz.HPL.Demo
 {
@@ -217,6 +218,20 @@ namespace AI.Metaviz.HPL.Demo
             this.B = b;
             this.ImageId = imageId;
             this.Transforms = transforms;
+        }
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="Color" /> class from a <see cref="UnityEngine.Color" />.
+        /// </summary>
+        ///
+        /// <param name="color">The <see cref="UnityEngine.Color" /> to convert from.</param>
+        public Color(UnityEngine.Color color)
+        {
+            this.Encoding = "RGBAFloat";
+            this.R = color.r;
+            this.G = color.g;
+            this.B = color.b;
+            this.Transforms = new ImageTransformations(alpha: color.a);
         }
 
         /// <summary>
@@ -447,6 +462,17 @@ namespace AI.Metaviz.HPL.Demo
             this.Depth = depth;
         }
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="Dimensions" /> class from a Unity Vector3.
+        /// </summary>
+        /// <param name="transformScale"> The transform scale of the object represented as a Vector3.</param>
+        public Dimensions(Vector3 transformScale)
+        {
+            this.UnitType = UnitTypeEnum.Pixels;
+            this.Width = transformScale.x;
+            this.Height = transformScale.y;
+            this.Depth = transformScale.z;
+        }
 
         /// <summary>
         /// Gets or Sets Width
@@ -517,6 +543,18 @@ namespace AI.Metaviz.HPL.Demo
             this.X = x;
             this.Y = y;
             this.Z = z;
+        }
+        
+        /// <summary>
+        /// Initializes a new instance of the <see cref="Position" /> class from a Unity Vector3.
+        /// </summary>
+        /// <param name="position"> The Unity Vector3 to convert from.</param>
+        public Position(Vector3 position)
+        {
+            this.UnitType = UnitTypeEnum.Pixels;
+            this.X = position.x;
+            this.Y = position.y;
+            this.Z = position.z;
         }
 
         /// <summary>
