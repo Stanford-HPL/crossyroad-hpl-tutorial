@@ -1,5 +1,13 @@
 {
   "dependencies": {
+    "com.hpl.vpi-unity": {
+      "version": "file:E:/Steven Le/GitHub/VPI-Unity",
+      "depth": 0,
+      "source": "local",
+      "dependencies": {
+        "com.unity.nuget.newtonsoft-json": "3.2.1"
+      }
+    },
     "com.unity.2d.animation": {
       "version": "7.0.10",
       "depth": 1,

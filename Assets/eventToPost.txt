@@ -1,0 +1,7646 @@
+{
+  "raw_data": [
+    {
+      "event_type": "Parent",
+      "parent_id": "225486",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:20:30.392Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 1931.0,
+        "y": 83.0,
+        "z": 11.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 51.0,
+        "height": 51.0
+      }
+    },
+    {
+      "event_type": "Child",
+      "parent_id": "225486",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:20:31.286Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 2272.0,
+        "y": -51.0,
+        "z": 9.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 62.0,
+        "height": 62.0
+      }
+    },
+    {
+      "event_type": "Parent",
+      "parent_id": "226000",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:20:30.392Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 1220.0,
+        "y": 319.0,
+        "z": 15.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 39.0,
+        "height": 39.0
+      }
+    },
+    {
+      "event_type": "Child",
+      "parent_id": "226000",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:20:33.560Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 2148.0,
+        "y": -278.0,
+        "z": 5.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 100.0,
+        "height": 100.0
+      }
+    },
+    {
+      "event_type": "Parent",
+      "parent_id": "225558",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:20:28.817Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 1141.0,
+        "y": 307.0,
+        "z": 15.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 39.0,
+        "height": 39.0
+      }
+    },
+    {
+      "event_type": "Child",
+      "parent_id": "225558",
+      "task_id": "Crossy Road",
+      "user_input": true,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:20:29.363Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 881.0,
+        "y": 337.0,
+        "z": 15.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 38.0,
+        "height": 38.0
+      }
+    },
+    {
+      "event_type": "Child",
+      "parent_id": "225558",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:20:33.751Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": -468.0,
+        "y": 282.0,
+        "z": 14.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 40.0,
+        "height": 40.0
+      }
+    },
+    {
+      "event_type": "Parent",
+      "parent_id": "225540",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:20:25.383Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 28.0,
+        "y": 679.0,
+        "z": 20.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 28.0,
+        "height": 28.0
+      }
+    },
+    {
+      "event_type": "Child",
+      "parent_id": "225540",
+      "task_id": "Crossy Road",
+      "user_input": true,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:20:27.603Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 713.0,
+        "y": 371.0,
+        "z": 16.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 37.0,
+        "height": 37.0
+      }
+    },
+    {
+      "event_type": "Child",
+      "parent_id": "225540",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:20:34.783Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 1541.0,
+        "y": -641.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 1946.0,
+        "height": 915.0
+      }
+    },
+    {
+      "event_type": "Parent",
+      "parent_id": "226560",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:20:30.392Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 509.0,
+        "y": 554.0,
+        "z": 18.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 31.0,
+        "height": 31.0
+      }
+    },
+    {
+      "event_type": "Child",
+      "parent_id": "226560",
+      "task_id": "Crossy Road",
+      "user_input": true,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:20:31.461Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 873.0,
+        "y": 369.0,
+        "z": 16.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 37.0,
+        "height": 37.0
+      }
+    },
+    {
+      "event_type": "Child",
+      "parent_id": "226560",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:20:35.834Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 1786.0,
+        "y": -192.0,
+        "z": 7.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 81.0,
+        "height": 81.0
+      }
+    },
+    {
+      "event_type": "Parent",
+      "parent_id": "225576",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": false,
+      "time_occurred": "2023-11-02T22:20:29.577Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.0,
+        "g": 0.5019608,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.7529412,
+        "g": 0.7529412,
+        "b": 0.7529412,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 1222.0,
+        "y": 352.0,
+        "z": 15.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 59.0,
+        "height": 88.0
+      }
+    },
+    {
+      "event_type": "Child",
+      "parent_id": "225576",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": false,
+      "time_occurred": "2023-11-02T22:20:36.595Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.0,
+        "g": 0.5019608,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.7529412,
+        "g": 0.7529412,
+        "b": 0.7529412,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": -839.0,
+        "y": 542.0,
+        "z": 18.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 49.0,
+        "height": 74.0
+      }
+    },
+    {
+      "event_type": "Parent",
+      "parent_id": "226148",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:20:28.817Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 1915.0,
+        "y": 51.0,
+        "z": 11.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 53.0,
+        "height": 53.0
+      }
+    },
+    {
+      "event_type": "Child",
+      "parent_id": "226148",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:20:36.786Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": -988.0,
+        "y": 409.0,
+        "z": 16.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 35.0,
+        "height": 35.0
+      }
+    },
+    {
+      "event_type": "Parent",
+      "parent_id": "226018",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:20:31.451Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 1157.0,
+        "y": 336.0,
+        "z": 15.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 38.0,
+        "height": 38.0
+      }
+    },
+    {
+      "event_type": "Child",
+      "parent_id": "226018",
+      "task_id": "Crossy Road",
+      "user_input": true,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:20:31.702Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 1065.0,
+        "y": 314.0,
+        "z": 15.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 39.0,
+        "height": 39.0
+      }
+    },
+    {
+      "event_type": "Child",
+      "parent_id": "226018",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:20:37.325Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": -816.0,
+        "y": 659.0,
+        "z": 20.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 28.0,
+        "height": 28.0
+      }
+    },
+    {
+      "event_type": "Parent",
+      "parent_id": "226130",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:20:27.428Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 13.0,
+        "y": 642.0,
+        "z": 20.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 29.0,
+        "height": 29.0
+      }
+    },
+    {
+      "event_type": "Child",
+      "parent_id": "226130",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:20:37.795Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 1097.0,
+        "y": -588.0,
+        "z": 1.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 535.0,
+        "height": 535.0
+      }
+    },
+    {
+      "event_type": "Parent",
+      "parent_id": "227432",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:20:30.503Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": -158.0,
+        "y": 774.0,
+        "z": 22.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 26.0,
+        "height": 26.0
+      }
+    },
+    {
+      "event_type": "Child",
+      "parent_id": "227432",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:20:38.110Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 1506.0,
+        "y": -182.0,
+        "z": 7.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 80.0,
+        "height": 80.0
+      }
+    },
+    {
+      "event_type": "Parent",
+      "parent_id": "225924",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": false,
+      "time_occurred": "2023-11-02T22:20:32.236Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 1.0,
+        "g": 1.0,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.7529412,
+        "g": 0.7529412,
+        "b": 0.7529412,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 1154.0,
+        "y": 420.0,
+        "z": 16.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 55.0,
+        "height": 82.0
+      }
+    },
+    {
+      "event_type": "Child",
+      "parent_id": "225924",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": false,
+      "time_occurred": "2023-11-02T22:20:39.059Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 1.0,
+        "g": 1.0,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.7529412,
+        "g": 0.7529412,
+        "b": 0.7529412,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": -785.0,
+        "y": 717.0,
+        "z": 20.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 42.0,
+        "height": 64.0
+      }
+    },
+    {
+      "event_type": "Parent",
+      "parent_id": "225634",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:20:32.236Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 1164.0,
+        "y": 358.0,
+        "z": 15.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 37.0,
+        "height": 37.0
+      }
+    },
+    {
+      "event_type": "Child",
+      "parent_id": "225634",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:20:39.156Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 1567.0,
+        "y": -121.0,
+        "z": 8.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 70.0,
+        "height": 71.0
+      }
+    },
+    {
+      "event_type": "Parent",
+      "parent_id": "227342",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:20:39.006Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 1700.0,
+        "y": 139.0,
+        "z": 12.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 47.0,
+        "height": 47.0
+      }
+    },
+    {
+      "event_type": "Child",
+      "parent_id": "227342",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:20:39.378Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 1863.0,
+        "y": 79.0,
+        "z": 11.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 51.0,
+        "height": 51.0
+      }
+    },
+    {
+      "event_type": "Parent",
+      "parent_id": "227794",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:20:38.469Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": -230.0,
+        "y": 762.0,
+        "z": 22.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 26.0,
+        "height": 26.0
+      }
+    },
+    {
+      "event_type": "Child",
+      "parent_id": "227794",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:20:39.672Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": -495.0,
+        "y": 735.0,
+        "z": 21.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 27.0,
+        "height": 27.0
+      }
+    },
+    {
+      "event_type": "Parent",
+      "parent_id": "225906",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:20:37.323Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": -192.0,
+        "y": 755.0,
+        "z": 22.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 26.0,
+        "height": 26.0
+      }
+    },
+    {
+      "event_type": "Child",
+      "parent_id": "225906",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:20:39.700Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": -530.0,
+        "y": 686.0,
+        "z": 21.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 28.0,
+        "height": 28.0
+      }
+    },
+    {
+      "event_type": "Parent",
+      "parent_id": "226210",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": false,
+      "time_occurred": "2023-11-02T22:20:29.577Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 1.0,
+        "g": 1.0,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.7529412,
+        "g": 0.7529412,
+        "b": 0.7529412,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 1847.0,
+        "y": 145.0,
+        "z": 11.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 75.0,
+        "height": 112.0
+      }
+    },
+    {
+      "event_type": "Child",
+      "parent_id": "226210",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": false,
+      "time_occurred": "2023-11-02T22:20:39.756Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 1.0,
+        "g": 1.0,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.7529412,
+        "g": 0.7529412,
+        "b": 0.7529412,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": -897.0,
+        "y": 319.0,
+        "z": 14.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 61.0,
+        "height": 91.0
+      }
+    },
+    {
+      "event_type": "Parent",
+      "parent_id": "228050",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": false,
+      "time_occurred": "2023-11-02T22:20:39.006Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.0,
+        "g": 0.5019608,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.7529412,
+        "g": 0.7529412,
+        "b": 0.7529412,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 1504.0,
+        "y": 263.0,
+        "z": 13.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 65.0,
+        "height": 97.0
+      }
+    },
+    {
+      "event_type": "Child",
+      "parent_id": "228050",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": false,
+      "time_occurred": "2023-11-02T22:20:40.087Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.0,
+        "g": 0.5019608,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.7529412,
+        "g": 0.7529412,
+        "b": 0.7529412,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 2092.0,
+        "y": 51.0,
+        "z": 10.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 85.0,
+        "height": 128.0
+      }
+    },
+    {
+      "event_type": "Parent",
+      "parent_id": "227270",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:20:40.885Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": -161.0,
+        "y": 752.0,
+        "z": 22.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 27.0,
+        "height": 27.0
+      }
+    },
+    {
+      "event_type": "Child",
+      "parent_id": "227270",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:20:41.391Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": -271.0,
+        "y": 780.0,
+        "z": 22.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 26.0,
+        "height": 26.0
+      }
+    },
+    {
+      "event_type": "Parent",
+      "parent_id": "227508",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:20:31.452Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 2168.0,
+        "y": 1.0,
+        "z": 10.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 57.0,
+        "height": 57.0
+      }
+    },
+    {
+      "event_type": "Child",
+      "parent_id": "227508",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:20:42.074Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": -736.0,
+        "y": 318.0,
+        "z": 15.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 39.0,
+        "height": 39.0
+      }
+    },
+    {
+      "event_type": "Parent",
+      "parent_id": "228426",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:20:39.006Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 913.0,
+        "y": 400.0,
+        "z": 16.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 36.0,
+        "height": 36.0
+      }
+    },
+    {
+      "event_type": "Child",
+      "parent_id": "228426",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:20:42.362Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 2003.0,
+        "y": -108.0,
+        "z": 8.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 69.0,
+        "height": 69.0
+      }
+    },
+    {
+      "event_type": "Parent",
+      "parent_id": "226480",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:20:32.236Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 615.0,
+        "y": 540.0,
+        "z": 18.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 31.0,
+        "height": 31.0
+      }
+    },
+    {
+      "event_type": "Child",
+      "parent_id": "226480",
+      "task_id": "Crossy Road",
+      "user_input": true,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:20:33.461Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 846.0,
+        "y": 397.0,
+        "z": 16.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 36.0,
+        "height": 36.0
+      }
+    },
+    {
+      "event_type": "Child",
+      "parent_id": "226480",
+      "task_id": "Crossy Road",
+      "user_input": true,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:20:33.662Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 876.0,
+        "y": 372.0,
+        "z": 16.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 36.0,
+        "height": 36.0
+      }
+    },
+    {
+      "event_type": "Child",
+      "parent_id": "226480",
+      "task_id": "Crossy Road",
+      "user_input": true,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:20:35.001Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 844.0,
+        "y": 374.0,
+        "z": 16.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 36.0,
+        "height": 36.0
+      }
+    },
+    {
+      "event_type": "Child",
+      "parent_id": "226480",
+      "task_id": "Crossy Road",
+      "user_input": true,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:20:35.202Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 875.0,
+        "y": 350.0,
+        "z": 16.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 37.0,
+        "height": 37.0
+      }
+    },
+    {
+      "event_type": "Child",
+      "parent_id": "226480",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:20:42.481Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 1773.0,
+        "y": -336.0,
+        "z": 5.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 118.0,
+        "height": 118.0
+      }
+    },
+    {
+      "event_type": "Parent",
+      "parent_id": "229880",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:20:38.692Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 1757.0,
+        "y": 68.0,
+        "z": 11.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 52.0,
+        "height": 52.0
+      }
+    },
+    {
+      "event_type": "Child",
+      "parent_id": "229880",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:20:42.554Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 749.0,
+        "y": 183.0,
+        "z": 13.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 45.0,
+        "height": 45.0
+      }
+    },
+    {
+      "event_type": "Parent",
+      "parent_id": "228876",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:20:34.717Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": -225.0,
+        "y": 733.0,
+        "z": 21.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 27.0,
+        "height": 27.0
+      }
+    },
+    {
+      "event_type": "Child",
+      "parent_id": "228876",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:20:42.555Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 686.0,
+        "y": 22.0,
+        "z": 10.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 56.0,
+        "height": 56.0
+      }
+    },
+    {
+      "event_type": "Parent",
+      "parent_id": "228684",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": false,
+      "time_occurred": "2023-11-02T22:20:33.976Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.0,
+        "g": 0.5019608,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.7529412,
+        "g": 0.7529412,
+        "b": 0.7529412,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 2303.0,
+        "y": -34.0,
+        "z": 9.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 98.0,
+        "height": 147.0
+      }
+    },
+    {
+      "event_type": "Child",
+      "parent_id": "228684",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": false,
+      "time_occurred": "2023-11-02T22:20:42.555Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.0,
+        "g": 0.5019608,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.7529412,
+        "g": 0.7529412,
+        "b": 0.7529412,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 282.0,
+        "y": 214.0,
+        "z": 12.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 68.0,
+        "height": 103.0
+      }
+    },
+    {
+      "event_type": "Parent",
+      "parent_id": "230004",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": false,
+      "time_occurred": "2023-11-02T22:20:39.068Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.0,
+        "g": 0.5019608,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.7529412,
+        "g": 0.7529412,
+        "b": 0.7529412,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": -556.0,
+        "y": 944.0,
+        "z": 24.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 36.0,
+        "height": 55.0
+      }
+    },
+    {
+      "event_type": "Child",
+      "parent_id": "230004",
+      "task_id": "Crossy Road",
+      "user_input": true,
+      "should_respond": false,
+      "time_occurred": "2023-11-02T22:20:42.545Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.0,
+        "g": 0.5019608,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.7529412,
+        "g": 0.7529412,
+        "b": 0.7529412,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 668.0,
+        "y": 389.0,
+        "z": 15.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 56.0,
+        "height": 85.0
+      }
+    },
+    {
+      "event_type": "Child",
+      "parent_id": "230004",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": false,
+      "time_occurred": "2023-11-02T22:20:42.556Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.0,
+        "g": 0.5019608,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.7529412,
+        "g": 0.7529412,
+        "b": 0.7529412,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 669.0,
+        "y": 389.0,
+        "z": 15.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 56.0,
+        "height": 85.0
+      }
+    },
+    {
+      "event_type": "Parent",
+      "parent_id": "229546",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:20:37.508Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 1786.0,
+        "y": 97.0,
+        "z": 11.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 50.0,
+        "height": 50.0
+      }
+    },
+    {
+      "event_type": "Child",
+      "parent_id": "229546",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:20:42.556Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 1024.0,
+        "y": 31.0,
+        "z": 10.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 55.0,
+        "height": 55.0
+      }
+    },
+    {
+      "event_type": "Parent",
+      "parent_id": "229108",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:20:39.006Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 127.0,
+        "y": 660.0,
+        "z": 20.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 28.0,
+        "height": 28.0
+      }
+    },
+    {
+      "event_type": "Child",
+      "parent_id": "229108",
+      "task_id": "Crossy Road",
+      "user_input": true,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:20:40.523Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 789.0,
+        "y": 370.0,
+        "z": 16.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 37.0,
+        "height": 37.0
+      }
+    },
+    {
+      "event_type": "Child",
+      "parent_id": "229108",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:20:42.556Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 1262.0,
+        "y": 134.0,
+        "z": 12.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 48.0,
+        "height": 48.0
+      }
+    },
+    {
+      "event_type": "Parent",
+      "parent_id": "227526",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:20:32.236Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 67.0,
+        "y": 722.0,
+        "z": 21.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 27.0,
+        "height": 27.0
+      }
+    },
+    {
+      "event_type": "Parent",
+      "parent_id": "227040",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": false,
+      "time_occurred": "2023-11-02T22:20:32.236Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 1.0,
+        "g": 1.0,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.7529412,
+        "g": 0.7529412,
+        "b": 0.7529412,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 1893.0,
+        "y": 175.0,
+        "z": 12.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 72.0,
+        "height": 108.0
+      }
+    },
+    {
+      "event_type": "Parent",
+      "parent_id": "226894",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:20:37.323Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 478.0,
+        "y": 533.0,
+        "z": 18.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 32.0,
+        "height": 32.0
+      }
+    },
+    {
+      "event_type": "Parent",
+      "parent_id": "228800",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:20:40.885Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 710.0,
+        "y": 463.0,
+        "z": 17.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 34.0,
+        "height": 34.0
+      }
+    },
+    {
+      "event_type": "Parent",
+      "parent_id": "230138",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:20:39.315Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": -536.0,
+        "y": 875.0,
+        "z": 23.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 24.0,
+        "height": 24.0
+      }
+    },
+    {
+      "event_type": "Parent",
+      "parent_id": "229774",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:20:40.885Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 1581.0,
+        "y": 174.0,
+        "z": 13.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 45.0,
+        "height": 45.0
+      }
+    },
+    {
+      "event_type": "Parent",
+      "parent_id": "228648",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:20:37.323Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 1148.0,
+        "y": 311.0,
+        "z": 15.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 39.0,
+        "height": 39.0
+      }
+    },
+    {
+      "event_type": "Child",
+      "parent_id": "228648",
+      "task_id": "Crossy Road",
+      "user_input": true,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:20:38.482Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 906.0,
+        "y": 325.0,
+        "z": 15.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 38.0,
+        "height": 38.0
+      }
+    },
+    {
+      "event_type": "Parent",
+      "parent_id": "229014",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": false,
+      "time_occurred": "2023-11-02T22:20:39.006Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.0,
+        "g": 0.5019608,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.7529412,
+        "g": 0.7529412,
+        "b": 0.7529412,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 465.0,
+        "y": 607.0,
+        "z": 19.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 46.0,
+        "height": 70.0
+      }
+    },
+    {
+      "event_type": "Parent",
+      "parent_id": "228978",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:20:38.469Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 810.0,
+        "y": 417.0,
+        "z": 16.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 35.0,
+        "height": 35.0
+      }
+    },
+    {
+      "event_type": "Child",
+      "parent_id": "228978",
+      "task_id": "Crossy Road",
+      "user_input": true,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:20:38.762Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 683.0,
+        "y": 407.0,
+        "z": 16.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 35.0,
+        "height": 35.0
+      }
+    },
+    {
+      "event_type": "Parent",
+      "parent_id": "242224",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:21:04.064Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 1109.0,
+        "y": 235.0,
+        "z": 13.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 42.0,
+        "height": 42.0
+      }
+    },
+    {
+      "event_type": "Child",
+      "parent_id": "242224",
+      "task_id": "Crossy Road",
+      "user_input": true,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:21:04.459Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 960.0,
+        "y": 229.0,
+        "z": 13.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 42.0,
+        "height": 42.0
+      }
+    },
+    {
+      "event_type": "Child",
+      "parent_id": "242224",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:21:09.383Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": -473.0,
+        "y": 580.0,
+        "z": 19.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 30.0,
+        "height": 30.0
+      }
+    },
+    {
+      "event_type": "Parent",
+      "parent_id": "242054",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": false,
+      "time_occurred": "2023-11-02T22:21:04.441Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.0,
+        "g": 0.5019608,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.7529412,
+        "g": 0.7529412,
+        "b": 0.7529412,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 1198.0,
+        "y": 269.0,
+        "z": 13.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 64.0,
+        "height": 96.0
+      }
+    },
+    {
+      "event_type": "Child",
+      "parent_id": "242054",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": false,
+      "time_occurred": "2023-11-02T22:21:17.283Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.0,
+        "g": 0.5019608,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.7529412,
+        "g": 0.7529412,
+        "b": 0.7529412,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": -441.0,
+        "y": 640.0,
+        "z": 19.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 45.0,
+        "height": 68.0
+      }
+    },
+    {
+      "event_type": "Parent",
+      "parent_id": "242756",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": false,
+      "time_occurred": "2023-11-02T22:21:04.441Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.0,
+        "g": 0.5019608,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.7529412,
+        "g": 0.7529412,
+        "b": 0.7529412,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 1918.0,
+        "y": 31.0,
+        "z": 10.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 88.0,
+        "height": 132.0
+      }
+    },
+    {
+      "event_type": "Child",
+      "parent_id": "242756",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": false,
+      "time_occurred": "2023-11-02T22:21:21.189Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.0,
+        "g": 0.5019608,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.7529412,
+        "g": 0.7529412,
+        "b": 0.7529412,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": -471.0,
+        "y": 505.0,
+        "z": 17.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 50.0,
+        "height": 76.0
+      }
+    },
+    {
+      "event_type": "Parent",
+      "parent_id": "243204",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": false,
+      "time_occurred": "2023-11-02T22:21:20.922Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.0,
+        "g": 0.5019608,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.7529412,
+        "g": 0.7529412,
+        "b": 0.7529412,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": -263.0,
+        "y": 600.0,
+        "z": 19.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 47.0,
+        "height": 70.0
+      }
+    },
+    {
+      "event_type": "Child",
+      "parent_id": "243204",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": false,
+      "time_occurred": "2023-11-02T22:21:21.334Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.0,
+        "g": 0.5019608,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.7529412,
+        "g": 0.7529412,
+        "b": 0.7529412,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": -390.0,
+        "y": 586.0,
+        "z": 18.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 47.0,
+        "height": 71.0
+      }
+    },
+    {
+      "event_type": "Parent",
+      "parent_id": "244188",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:21:22.247Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 1634.0,
+        "y": -71.0,
+        "z": 9.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 64.0,
+        "height": 64.0
+      }
+    },
+    {
+      "event_type": "Child",
+      "parent_id": "244188",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:21:23.521Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 1930.0,
+        "y": -285.0,
+        "z": 5.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 102.0,
+        "height": 102.0
+      }
+    },
+    {
+      "event_type": "Parent",
+      "parent_id": "243356",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": false,
+      "time_occurred": "2023-11-02T22:21:22.247Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 1.0,
+        "g": 0.0,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.7529412,
+        "g": 0.7529412,
+        "b": 0.7529412,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 1727.0,
+        "y": -43.0,
+        "z": 8.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 99.0,
+        "height": 149.0
+      }
+    },
+    {
+      "event_type": "Child",
+      "parent_id": "243356",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": false,
+      "time_occurred": "2023-11-02T22:21:24.012Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 1.0,
+        "g": 0.0,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.7529412,
+        "g": 0.7529412,
+        "b": 0.7529412,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 1947.0,
+        "y": -240.0,
+        "z": 5.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 151.0,
+        "height": 227.0
+      }
+    },
+    {
+      "event_type": "Parent",
+      "parent_id": "243888",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:21:23.220Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": -81.0,
+        "y": 507.0,
+        "z": 18.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 32.0,
+        "height": 32.0
+      }
+    },
+    {
+      "event_type": "Child",
+      "parent_id": "243888",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:21:24.521Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": -367.0,
+        "y": 581.0,
+        "z": 19.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 30.0,
+        "height": 30.0
+      }
+    },
+    {
+      "event_type": "Parent",
+      "parent_id": "243776",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": false,
+      "time_occurred": "2023-11-02T22:21:07.549Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 1.0,
+        "g": 1.0,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.7529412,
+        "g": 0.7529412,
+        "b": 0.7529412,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 1993.0,
+        "y": -89.0,
+        "z": 8.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 108.0,
+        "height": 162.0
+      }
+    },
+    {
+      "event_type": "Child",
+      "parent_id": "243776",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": false,
+      "time_occurred": "2023-11-02T22:21:25.096Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 1.0,
+        "g": 1.0,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.7529412,
+        "g": 0.7529412,
+        "b": 0.7529412,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": -748.0,
+        "y": 229.0,
+        "z": 13.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 67.0,
+        "height": 101.0
+      }
+    },
+    {
+      "event_type": "Parent",
+      "parent_id": "243960",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": false,
+      "time_occurred": "2023-11-02T22:21:20.922Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 1.0,
+        "g": 1.0,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.7529412,
+        "g": 0.7529412,
+        "b": 0.7529412,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 685.0,
+        "y": 286.0,
+        "z": 14.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 63.0,
+        "height": 95.0
+      }
+    },
+    {
+      "event_type": "Child",
+      "parent_id": "243960",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": false,
+      "time_occurred": "2023-11-02T22:21:25.961Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 1.0,
+        "g": 1.0,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.7529412,
+        "g": 0.7529412,
+        "b": 0.7529412,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": -774.0,
+        "y": 204.0,
+        "z": 12.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 69.0,
+        "height": 104.0
+      }
+    },
+    {
+      "event_type": "Parent",
+      "parent_id": "244922",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:21:22.247Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 488.0,
+        "y": 308.0,
+        "z": 15.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 39.0,
+        "height": 39.0
+      }
+    },
+    {
+      "event_type": "Child",
+      "parent_id": "244922",
+      "task_id": "Crossy Road",
+      "user_input": true,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:21:22.949Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 654.0,
+        "y": 194.0,
+        "z": 13.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 44.0,
+        "height": 44.0
+      }
+    },
+    {
+      "event_type": "Child",
+      "parent_id": "244922",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:21:27.314Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 1521.0,
+        "y": -691.0
+      },
+      "dimensions": {
+        "unit_type": "pixels"
+      }
+    },
+    {
+      "event_type": "Parent",
+      "parent_id": "244792",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:21:26.947Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 1882.0,
+        "y": -90.0,
+        "z": 8.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 67.0,
+        "height": 67.0
+      }
+    },
+    {
+      "event_type": "Child",
+      "parent_id": "244792",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:21:27.655Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 2064.0,
+        "y": -209.0,
+        "z": 7.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 84.0,
+        "height": 84.0
+      }
+    },
+    {
+      "event_type": "Parent",
+      "parent_id": "244474",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:21:23.220Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 571.0,
+        "y": 291.0,
+        "z": 14.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 40.0,
+        "height": 40.0
+      }
+    },
+    {
+      "event_type": "Child",
+      "parent_id": "244474",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:21:27.667Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": -718.0,
+        "y": 166.0,
+        "z": 12.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 46.0,
+        "height": 46.0
+      }
+    },
+    {
+      "event_type": "Parent",
+      "parent_id": "244702",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:21:26.366Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": -18.0,
+        "y": 523.0,
+        "z": 18.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 32.0,
+        "height": 32.0
+      }
+    },
+    {
+      "event_type": "Child",
+      "parent_id": "244702",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:21:27.747Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": -369.0,
+        "y": 473.0,
+        "z": 17.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 33.0,
+        "height": 33.0
+      }
+    },
+    {
+      "event_type": "Parent",
+      "parent_id": "244358",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": false,
+      "time_occurred": "2023-11-02T22:21:11.456Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 1.0,
+        "g": 1.0,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.7529412,
+        "g": 0.7529412,
+        "b": 0.7529412,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 1948.0,
+        "y": -133.0,
+        "z": 7.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 118.0,
+        "height": 177.0
+      }
+    },
+    {
+      "event_type": "Child",
+      "parent_id": "244358",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": false,
+      "time_occurred": "2023-11-02T22:21:29.003Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 1.0,
+        "g": 1.0,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.7529412,
+        "g": 0.7529412,
+        "b": 0.7529412,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": -1181.0,
+        "y": -199.0,
+        "z": 6.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 137.0,
+        "height": 205.0
+      }
+    },
+    {
+      "event_type": "Parent",
+      "parent_id": "244206",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": false,
+      "time_occurred": "2023-11-02T22:21:22.247Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 1.0,
+        "g": 0.0,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.7529412,
+        "g": 0.7529412,
+        "b": 0.7529412,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 819.0,
+        "y": 257.0,
+        "z": 13.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 65.0,
+        "height": 98.0
+      }
+    },
+    {
+      "event_type": "Child",
+      "parent_id": "244206",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": false,
+      "time_occurred": "2023-11-02T22:21:29.106Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 1.0,
+        "g": 0.0,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.7529412,
+        "g": 0.7529412,
+        "b": 0.7529412,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 1408.0,
+        "y": -776.0,
+        "z": -2.0
+      },
+      "dimensions": {
+        "unit_type": "pixels"
+      }
+    },
+    {
+      "event_type": "Parent",
+      "parent_id": "244112",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": false,
+      "time_occurred": "2023-11-02T22:21:25.689Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 1.0,
+        "g": 0.0,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.7529412,
+        "g": 0.7529412,
+        "b": 0.7529412,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 310.0,
+        "y": 446.0,
+        "z": 16.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 53.0,
+        "height": 80.0
+      }
+    },
+    {
+      "event_type": "Child",
+      "parent_id": "244112",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": false,
+      "time_occurred": "2023-11-02T22:21:29.361Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 1.0,
+        "g": 0.0,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.7529412,
+        "g": 0.7529412,
+        "b": 0.7529412,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": -727.0,
+        "y": 250.0,
+        "z": 13.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 65.0,
+        "height": 98.0
+      }
+    },
+    {
+      "event_type": "Parent",
+      "parent_id": "245432",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": false,
+      "time_occurred": "2023-11-02T22:21:25.265Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 1.0,
+        "g": 1.0,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.7529412,
+        "g": 0.7529412,
+        "b": 0.7529412,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 744.0,
+        "y": 297.0,
+        "z": 14.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 62.0,
+        "height": 93.0
+      }
+    },
+    {
+      "event_type": "Child",
+      "parent_id": "245432",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": false,
+      "time_occurred": "2023-11-02T22:21:29.525Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 1.0,
+        "g": 1.0,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.7529412,
+        "g": 0.7529412,
+        "b": 0.7529412,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 1581.0,
+        "y": -605.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 1946.0,
+        "height": 915.0
+      }
+    },
+    {
+      "event_type": "Parent",
+      "parent_id": "244904",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:21:29.271Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": -156.0,
+        "y": 611.0,
+        "z": 19.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 30.0,
+        "height": 30.0
+      }
+    },
+    {
+      "event_type": "Child",
+      "parent_id": "244904",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:21:29.867Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": -371.0,
+        "y": 576.0,
+        "z": 19.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 30.0,
+        "height": 30.0
+      }
+    },
+    {
+      "event_type": "Parent",
+      "parent_id": "245508",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:21:27.215Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 1224.0,
+        "y": 136.0,
+        "z": 12.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 47.0,
+        "height": 47.0
+      }
+    },
+    {
+      "event_type": "Child",
+      "parent_id": "245508",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:21:30.173Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 1748.0,
+        "y": -373.0,
+        "z": 4.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 133.0,
+        "height": 133.0
+      }
+    },
+    {
+      "event_type": "Parent",
+      "parent_id": "244828",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": false,
+      "time_occurred": "2023-11-02T22:21:20.922Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 1.0,
+        "g": 0.0,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.7529412,
+        "g": 0.7529412,
+        "b": 0.7529412,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 1634.0,
+        "y": -28.0,
+        "z": 9.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 97.0,
+        "height": 145.0
+      }
+    },
+    {
+      "event_type": "Child",
+      "parent_id": "244828",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": false,
+      "time_occurred": "2023-11-02T22:21:30.596Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 1.0,
+        "g": 0.0,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.7529412,
+        "g": 0.7529412,
+        "b": 0.7529412,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": -1384.0,
+        "y": -192.0,
+        "z": 6.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 134.0,
+        "height": 202.0
+      }
+    },
+    {
+      "event_type": "Parent",
+      "parent_id": "244886",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:21:23.220Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 1224.0,
+        "y": 74.0,
+        "z": 11.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 52.0,
+        "height": 52.0
+      }
+    },
+    {
+      "event_type": "Child",
+      "parent_id": "244886",
+      "task_id": "Crossy Road",
+      "user_input": true,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:21:24.787Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 844.0,
+        "y": 127.0,
+        "z": 12.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 48.0,
+        "height": 48.0
+      }
+    },
+    {
+      "event_type": "Child",
+      "parent_id": "244886",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:21:30.815Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": -1200.0,
+        "y": -37.0,
+        "z": 9.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 61.0,
+        "height": 61.0
+      }
+    },
+    {
+      "event_type": "Parent",
+      "parent_id": "245016",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": false,
+      "time_occurred": "2023-11-02T22:21:29.853Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.0,
+        "g": 0.5019608,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.7529412,
+        "g": 0.7529412,
+        "b": 0.7529412,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": -4.0,
+        "y": 634.0,
+        "z": 19.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 45.0,
+        "height": 68.0
+      }
+    },
+    {
+      "event_type": "Child",
+      "parent_id": "245016",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": false,
+      "time_occurred": "2023-11-02T22:21:31.039Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.0,
+        "g": 0.5019608,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.7529412,
+        "g": 0.7529412,
+        "b": 0.7529412,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": -484.0,
+        "y": 702.0,
+        "z": 20.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 43.0,
+        "height": 65.0
+      }
+    },
+    {
+      "event_type": "Parent",
+      "parent_id": "246142",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:21:23.348Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": -411.0,
+        "y": 492.0,
+        "z": 17.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 33.0,
+        "height": 33.0
+      }
+    },
+    {
+      "event_type": "Child",
+      "parent_id": "246142",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:21:31.109Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 1032.0,
+        "y": -968.0,
+        "z": -4.0
+      },
+      "dimensions": {
+        "unit_type": "pixels"
+      }
+    },
+    {
+      "event_type": "Parent",
+      "parent_id": "244774",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:21:29.853Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": -43.0,
+        "y": 589.0,
+        "z": 19.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 30.0,
+        "height": 30.0
+      }
+    },
+    {
+      "event_type": "Child",
+      "parent_id": "244774",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:21:31.135Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": -526.0,
+        "y": 632.0,
+        "z": 20.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 29.0,
+        "height": 29.0
+      }
+    },
+    {
+      "event_type": "Parent",
+      "parent_id": "244550",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": false,
+      "time_occurred": "2023-11-02T22:21:25.935Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 1.0,
+        "g": 1.0,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.7529412,
+        "g": 0.7529412,
+        "b": 0.7529412,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 539.0,
+        "y": 380.0,
+        "z": 15.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 57.0,
+        "height": 86.0
+      }
+    },
+    {
+      "event_type": "Child",
+      "parent_id": "244550",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": false,
+      "time_occurred": "2023-11-02T22:21:31.152Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 1.0,
+        "g": 1.0,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.7529412,
+        "g": 0.7529412,
+        "b": 0.7529412,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": -1006.0,
+        "y": 183.0,
+        "z": 12.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 71.0,
+        "height": 107.0
+      }
+    },
+    {
+      "event_type": "Parent",
+      "parent_id": "245302",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:21:26.366Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 895.0,
+        "y": 220.0,
+        "z": 13.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 43.0,
+        "height": 43.0
+      }
+    },
+    {
+      "event_type": "Child",
+      "parent_id": "245302",
+      "task_id": "Crossy Road",
+      "user_input": true,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:21:26.706Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 780.0,
+        "y": 205.0,
+        "z": 13.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 44.0,
+        "height": 44.0
+      }
+    },
+    {
+      "event_type": "Child",
+      "parent_id": "245302",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:21:31.880Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": -926.0,
+        "y": 159.0,
+        "z": 12.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 46.0,
+        "height": 46.0
+      }
+    },
+    {
+      "event_type": "Parent",
+      "parent_id": "246026",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:21:26.947Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 708.0,
+        "y": 298.0,
+        "z": 14.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 39.0,
+        "height": 39.0
+      }
+    },
+    {
+      "event_type": "Child",
+      "parent_id": "246026",
+      "task_id": "Crossy Road",
+      "user_input": true,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:21:27.228Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 741.0,
+        "y": 234.0,
+        "z": 13.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 42.0,
+        "height": 42.0
+      }
+    },
+    {
+      "event_type": "Child",
+      "parent_id": "246026",
+      "task_id": "Crossy Road",
+      "user_input": true,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:21:27.427Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 791.0,
+        "y": 204.0,
+        "z": 13.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 43.0,
+        "height": 43.0
+      }
+    },
+    {
+      "event_type": "Child",
+      "parent_id": "246026",
+      "task_id": "Crossy Road",
+      "user_input": true,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:21:27.747Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 949.0,
+        "y": 157.0,
+        "z": 12.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 46.0,
+        "height": 46.0
+      }
+    },
+    {
+      "event_type": "Child",
+      "parent_id": "246026",
+      "task_id": "Crossy Road",
+      "user_input": true,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:21:27.949Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 999.0,
+        "y": 127.0,
+        "z": 12.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 47.0,
+        "height": 47.0
+      }
+    },
+    {
+      "event_type": "Child",
+      "parent_id": "246026",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:21:32.164Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 1561.0,
+        "y": -547.0,
+        "z": 1.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 341.0,
+        "height": 341.0
+      }
+    },
+    {
+      "event_type": "Parent",
+      "parent_id": "245074",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": false,
+      "time_occurred": "2023-11-02T22:21:20.008Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 1.0,
+        "g": 1.0,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.7529412,
+        "g": 0.7529412,
+        "b": 0.7529412,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 1983.0,
+        "y": -204.0,
+        "z": 6.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 138.0,
+        "height": 207.0
+      }
+    },
+    {
+      "event_type": "Child",
+      "parent_id": "245074",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": false,
+      "time_occurred": "2023-11-02T22:21:32.909Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 1.0,
+        "g": 1.0,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.7529412,
+        "g": 0.7529412,
+        "b": 0.7529412,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": -1527.0,
+        "y": -495.0,
+        "z": 1.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 468.0,
+        "height": 702.0
+      }
+    },
+    {
+      "event_type": "Parent",
+      "parent_id": "246656",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:21:27.215Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 347.0,
+        "y": 427.0,
+        "z": 16.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 35.0,
+        "height": 35.0
+      }
+    },
+    {
+      "event_type": "Child",
+      "parent_id": "246656",
+      "task_id": "Crossy Road",
+      "user_input": true,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:21:28.508Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 665.0,
+        "y": 252.0,
+        "z": 14.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 41.0,
+        "height": 41.0
+      }
+    },
+    {
+      "event_type": "Child",
+      "parent_id": "246656",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:21:33.232Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 1683.0,
+        "y": -591.0,
+        "z": 1.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 565.0,
+        "height": 565.0
+      }
+    },
+    {
+      "event_type": "Parent",
+      "parent_id": "246062",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:21:29.271Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 704.0,
+        "y": 326.0,
+        "z": 15.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 38.0,
+        "height": 38.0
+      }
+    },
+    {
+      "event_type": "Child",
+      "parent_id": "246062",
+      "task_id": "Crossy Road",
+      "user_input": true,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:21:29.608Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 587.0,
+        "y": 311.0,
+        "z": 15.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 39.0,
+        "height": 39.0
+      }
+    },
+    {
+      "event_type": "Child",
+      "parent_id": "246062",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:21:33.652Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": -482.0,
+        "y": 361.0,
+        "z": 15.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 37.0,
+        "height": 37.0
+      }
+    },
+    {
+      "event_type": "Parent",
+      "parent_id": "245938",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:21:23.220Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 1877.0,
+        "y": -141.0,
+        "z": 8.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 73.0,
+        "height": 73.0
+      }
+    },
+    {
+      "event_type": "Child",
+      "parent_id": "245938",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:21:33.962Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": -1162.0,
+        "y": -314.0,
+        "z": 5.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 110.0,
+        "height": 110.0
+      }
+    },
+    {
+      "event_type": "Parent",
+      "parent_id": "245208",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": false,
+      "time_occurred": "2023-11-02T22:21:22.247Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 1.0,
+        "g": 0.0,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.7529412,
+        "g": 0.7529412,
+        "b": 0.7529412,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": -87.0,
+        "y": 557.0,
+        "z": 18.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 48.0,
+        "height": 73.0
+      }
+    },
+    {
+      "event_type": "Child",
+      "parent_id": "245208",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": false,
+      "time_occurred": "2023-11-02T22:21:34.202Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 1.0,
+        "g": 0.0,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.7529412,
+        "g": 0.7529412,
+        "b": 0.7529412,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 1106.0,
+        "y": -1181.0,
+        "z": -8.0
+      },
+      "dimensions": {
+        "unit_type": "pixels"
+      }
+    },
+    {
+      "event_type": "Parent",
+      "parent_id": "246866",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:21:32.664Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 1570.0,
+        "y": 61.0,
+        "z": 11.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 52.0,
+        "height": 53.0
+      }
+    },
+    {
+      "event_type": "Child",
+      "parent_id": "246866",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:21:34.344Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 2070.0,
+        "y": -251.0,
+        "z": 6.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 93.0,
+        "height": 93.0
+      }
+    },
+    {
+      "event_type": "Parent",
+      "parent_id": "245132",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": false,
+      "time_occurred": "2023-11-02T22:21:25.689Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 1.0,
+        "g": 0.0,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.7529412,
+        "g": 0.7529412,
+        "b": 0.7529412,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 1172.0,
+        "y": 161.0,
+        "z": 12.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 73.0,
+        "height": 110.0
+      }
+    },
+    {
+      "event_type": "Child",
+      "parent_id": "245132",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": false,
+      "time_occurred": "2023-11-02T22:21:34.379Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 1.0,
+        "g": 0.0,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.7529412,
+        "g": 0.7529412,
+        "b": 0.7529412,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": -1021.0,
+        "y": -146.0,
+        "z": 7.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 121.0,
+        "height": 182.0
+      }
+    },
+    {
+      "event_type": "Parent",
+      "parent_id": "245490",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:21:29.853Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 615.0,
+        "y": 371.0,
+        "z": 16.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 37.0,
+        "height": 37.0
+      }
+    },
+    {
+      "event_type": "Child",
+      "parent_id": "245490",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:21:34.695Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": -467.0,
+        "y": 316.0,
+        "z": 15.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 39.0,
+        "height": 39.0
+      }
+    },
+    {
+      "event_type": "Parent",
+      "parent_id": "246218",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": false,
+      "time_occurred": "2023-11-02T22:21:29.854Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 1.0,
+        "g": 0.0,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.7529412,
+        "g": 0.7529412,
+        "b": 0.7529412,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 827.0,
+        "y": 359.0,
+        "z": 15.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 58.0,
+        "height": 87.0
+      }
+    },
+    {
+      "event_type": "Child",
+      "parent_id": "246218",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": false,
+      "time_occurred": "2023-11-02T22:21:34.928Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 1.0,
+        "g": 0.0,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.7529412,
+        "g": 0.7529412,
+        "b": 0.7529412,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": -412.0,
+        "y": 353.0,
+        "z": 15.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 58.0,
+        "height": 88.0
+      }
+    },
+    {
+      "event_type": "Parent",
+      "parent_id": "246334",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": false,
+      "time_occurred": "2023-11-02T22:21:34.444Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 1.0,
+        "g": 1.0,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.7529412,
+        "g": 0.7529412,
+        "b": 0.7529412,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 2095.0,
+        "y": -44.0,
+        "z": 8.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 99.0,
+        "height": 149.0
+      }
+    },
+    {
+      "event_type": "Child",
+      "parent_id": "246334",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": false,
+      "time_occurred": "2023-11-02T22:21:34.982Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 1.0,
+        "g": 1.0,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.7529412,
+        "g": 0.7529412,
+        "b": 0.7529412,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 2284.0,
+        "y": -116.0,
+        "z": 7.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 114.0,
+        "height": 171.0
+      }
+    },
+    {
+      "event_type": "Parent",
+      "parent_id": "248008",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:21:27.543Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": -374.0,
+        "y": 599.0,
+        "z": 19.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 30.0,
+        "height": 30.0
+      }
+    },
+    {
+      "event_type": "Child",
+      "parent_id": "248008",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:21:35.555Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 1231.0,
+        "y": -697.0
+      },
+      "dimensions": {
+        "unit_type": "pixels"
+      }
+    },
+    {
+      "event_type": "Parent",
+      "parent_id": "248732",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": false,
+      "time_occurred": "2023-11-02T22:21:34.196Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 1.0,
+        "g": 0.0,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.7529412,
+        "g": 0.7529412,
+        "b": 0.7529412,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 637.0,
+        "y": 430.0,
+        "z": 16.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 54.0,
+        "height": 82.0
+      }
+    },
+    {
+      "event_type": "Child",
+      "parent_id": "248732",
+      "task_id": "Crossy Road",
+      "user_input": true,
+      "should_respond": false,
+      "time_occurred": "2023-11-02T22:21:35.547Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 1.0,
+        "g": 0.0,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.7529412,
+        "g": 0.7529412,
+        "b": 0.7529412,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 857.0,
+        "y": 272.0,
+        "z": 13.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 64.0,
+        "height": 96.0
+      }
+    },
+    {
+      "event_type": "Child",
+      "parent_id": "248732",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": false,
+      "time_occurred": "2023-11-02T22:21:35.555Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 1.0,
+        "g": 0.0,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.7529412,
+        "g": 0.7529412,
+        "b": 0.7529412,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 858.0,
+        "y": 272.0,
+        "z": 13.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 64.0,
+        "height": 96.0
+      }
+    },
+    {
+      "event_type": "Parent",
+      "parent_id": "248826",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": false,
+      "time_occurred": "2023-11-02T22:21:34.444Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.0,
+        "g": 0.5019608,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.7529412,
+        "g": 0.7529412,
+        "b": 0.7529412,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 703.0,
+        "y": 416.0,
+        "z": 16.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 55.0,
+        "height": 83.0
+      }
+    },
+    {
+      "event_type": "Child",
+      "parent_id": "248826",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": false,
+      "time_occurred": "2023-11-02T22:21:35.555Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.0,
+        "g": 0.5019608,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.7529412,
+        "g": 0.7529412,
+        "b": 0.7529412,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 919.0,
+        "y": 312.0,
+        "z": 14.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 61.0,
+        "height": 92.0
+      }
+    },
+    {
+      "event_type": "Parent",
+      "parent_id": "247408",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:21:34.196Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 1534.0,
+        "y": 74.0,
+        "z": 11.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 52.0,
+        "height": 52.0
+      }
+    },
+    {
+      "event_type": "Child",
+      "parent_id": "247408",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:21:35.556Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 1768.0,
+        "y": -87.0,
+        "z": 8.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 66.0,
+        "height": 66.0
+      }
+    },
+    {
+      "event_type": "Parent",
+      "parent_id": "246884",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": false,
+      "time_occurred": "2023-11-02T22:21:25.689Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 1.0,
+        "g": 0.0,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.7529412,
+        "g": 0.7529412,
+        "b": 0.7529412,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 2034.0,
+        "y": -124.0,
+        "z": 7.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 116.0,
+        "height": 174.0
+      }
+    },
+    {
+      "event_type": "Child",
+      "parent_id": "246884",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": false,
+      "time_occurred": "2023-11-02T22:21:35.556Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 1.0,
+        "g": 0.0,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.7529412,
+        "g": 0.7529412,
+        "b": 0.7529412,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": -398.0,
+        "y": -402.0,
+        "z": 3.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 266.0,
+        "height": 399.0
+      }
+    },
+    {
+      "event_type": "Parent",
+      "parent_id": "251116",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:21:34.967Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": -160.0,
+        "y": 574.0,
+        "z": 19.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 30.0,
+        "height": 30.0
+      }
+    },
+    {
+      "event_type": "Child",
+      "parent_id": "251116",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:21:35.556Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": -130.0,
+        "y": 541.0,
+        "z": 18.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 31.0,
+        "height": 31.0
+      }
+    },
+    {
+      "event_type": "Parent",
+      "parent_id": "248418",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:21:29.854Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 1932.0,
+        "y": -65.0,
+        "z": 9.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 64.0,
+        "height": 64.0
+      }
+    },
+    {
+      "event_type": "Child",
+      "parent_id": "248418",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:21:35.556Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 626.0,
+        "y": -72.0,
+        "z": 9.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 65.0,
+        "height": 65.0
+      }
+    },
+    {
+      "event_type": "Parent",
+      "parent_id": "248208",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:21:32.664Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 915.0,
+        "y": 278.0,
+        "z": 14.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 40.0,
+        "height": 40.0
+      }
+    },
+    {
+      "event_type": "Child",
+      "parent_id": "248208",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:21:35.556Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 1697.0,
+        "y": -185.0,
+        "z": 7.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 80.0,
+        "height": 80.0
+      }
+    },
+    {
+      "event_type": "Parent",
+      "parent_id": "248226",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:21:28.004Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": -239.0,
+        "y": 608.0,
+        "z": 19.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 30.0,
+        "height": 30.0
+      }
+    },
+    {
+      "event_type": "Child",
+      "parent_id": "248226",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:21:35.556Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 1357.0,
+        "y": -678.0
+      },
+      "dimensions": {
+        "unit_type": "pixels"
+      }
+    },
+    {
+      "event_type": "Parent",
+      "parent_id": "248790",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:21:32.664Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 261.0,
+        "y": 494.0,
+        "z": 18.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 33.0,
+        "height": 33.0
+      }
+    },
+    {
+      "event_type": "Child",
+      "parent_id": "248790",
+      "task_id": "Crossy Road",
+      "user_input": true,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:21:33.889Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 697.0,
+        "y": 282.0,
+        "z": 14.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 40.0,
+        "height": 40.0
+      }
+    },
+    {
+      "event_type": "Child",
+      "parent_id": "248790",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:21:35.557Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 1042.0,
+        "y": 31.0,
+        "z": 10.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 55.0,
+        "height": 55.0
+      }
+    },
+    {
+      "event_type": "Parent",
+      "parent_id": "250472",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": false,
+      "time_occurred": "2023-11-02T22:21:33.508Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 1.0,
+        "g": 0.0,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.7529412,
+        "g": 0.7529412,
+        "b": 0.7529412,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": -233.0,
+        "y": 581.0,
+        "z": 18.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 47.0,
+        "height": 71.0
+      }
+    },
+    {
+      "event_type": "Child",
+      "parent_id": "250472",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": false,
+      "time_occurred": "2023-11-02T22:21:35.557Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 1.0,
+        "g": 0.0,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.7529412,
+        "g": 0.7529412,
+        "b": 0.7529412,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 206.0,
+        "y": 245.0,
+        "z": 13.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 66.0,
+        "height": 99.0
+      }
+    },
+    {
+      "event_type": "Parent",
+      "parent_id": "247670",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:21:29.271Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 1565.0,
+        "y": 41.0,
+        "z": 10.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 54.0,
+        "height": 54.0
+      }
+    },
+    {
+      "event_type": "Child",
+      "parent_id": "247670",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:21:35.557Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": -194.0,
+        "y": 77.0,
+        "z": 11.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 51.0,
+        "height": 51.0
+      }
+    },
+    {
+      "event_type": "Parent",
+      "parent_id": "245588",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": false,
+      "time_occurred": "2023-11-02T22:21:25.935Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 1.0,
+        "g": 0.0,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.7529412,
+        "g": 0.7529412,
+        "b": 0.7529412,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 1418.0,
+        "y": 89.0,
+        "z": 11.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 80.0,
+        "height": 121.0
+      }
+    },
+    {
+      "event_type": "Child",
+      "parent_id": "245588",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": false,
+      "time_occurred": "2023-11-02T22:21:35.558Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 1.0,
+        "g": 0.0,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.7529412,
+        "g": 0.7529412,
+        "b": 0.7529412,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": -853.0,
+        "y": -191.0,
+        "z": 6.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 134.0,
+        "height": 201.0
+      }
+    },
+    {
+      "event_type": "Parent",
+      "parent_id": "250548",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": false,
+      "time_occurred": "2023-11-02T22:21:34.444Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 1.0,
+        "g": 0.0,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.7529412,
+        "g": 0.7529412,
+        "b": 0.7529412,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 6.0,
+        "y": 647.0,
+        "z": 19.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 45.0,
+        "height": 67.0
+      }
+    },
+    {
+      "event_type": "Child",
+      "parent_id": "250548",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": false,
+      "time_occurred": "2023-11-02T22:21:35.558Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 1.0,
+        "g": 0.0,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.7529412,
+        "g": 0.7529412,
+        "b": 0.7529412,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 223.0,
+        "y": 542.0,
+        "z": 18.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 49.0,
+        "height": 74.0
+      }
+    },
+    {
+      "event_type": "Parent",
+      "parent_id": "248150",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": false,
+      "time_occurred": "2023-11-02T22:21:31.131Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.0,
+        "g": 0.5019608,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.7529412,
+        "g": 0.7529412,
+        "b": 0.7529412,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 517.0,
+        "y": 467.0,
+        "z": 16.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 52.0,
+        "height": 79.0
+      }
+    },
+    {
+      "event_type": "Child",
+      "parent_id": "248150",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": false,
+      "time_occurred": "2023-11-02T22:21:35.558Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.0,
+        "g": 0.5019608,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.7529412,
+        "g": 0.7529412,
+        "b": 0.7529412,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 1773.0,
+        "y": -273.0,
+        "z": 5.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 166.0,
+        "height": 249.0
+      }
+    },
+    {
+      "event_type": "Parent",
+      "parent_id": "250396",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:21:32.816Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": -351.0,
+        "y": 694.0,
+        "z": 21.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 28.0,
+        "height": 28.0
+      }
+    },
+    {
+      "event_type": "Child",
+      "parent_id": "250396",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:21:35.558Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 387.0,
+        "y": 248.0,
+        "z": 14.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 42.0,
+        "height": 42.0
+      }
+    },
+    {
+      "event_type": "Parent",
+      "parent_id": "247892",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": false,
+      "time_occurred": "2023-11-02T22:21:34.444Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 1.0,
+        "g": 0.0,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.7529412,
+        "g": 0.7529412,
+        "b": 0.7529412,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 1399.0,
+        "y": 186.0,
+        "z": 12.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 71.0,
+        "height": 106.0
+      }
+    },
+    {
+      "event_type": "Child",
+      "parent_id": "247892",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": false,
+      "time_occurred": "2023-11-02T22:21:35.558Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 1.0,
+        "g": 0.0,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.7529412,
+        "g": 0.7529412,
+        "b": 0.7529412,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 1616.0,
+        "y": 81.0,
+        "z": 10.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 81.0,
+        "height": 122.0
+      }
+    },
+    {
+      "event_type": "Parent",
+      "parent_id": "246848",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:21:29.854Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 1274.0,
+        "y": 153.0,
+        "z": 12.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 46.0,
+        "height": 47.0
+      }
+    },
+    {
+      "event_type": "Child",
+      "parent_id": "246848",
+      "task_id": "Crossy Road",
+      "user_input": true,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:21:30.907Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 872.0,
+        "y": 221.0,
+        "z": 13.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 43.0,
+        "height": 43.0
+      }
+    },
+    {
+      "event_type": "Child",
+      "parent_id": "246848",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:21:35.558Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": -32.0,
+        "y": 145.0,
+        "z": 12.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 47.0,
+        "height": 47.0
+      }
+    },
+    {
+      "event_type": "Parent",
+      "parent_id": "248026",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": false,
+      "time_occurred": "2023-11-02T22:21:29.854Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 1.0,
+        "g": 0.0,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.7529412,
+        "g": 0.7529412,
+        "b": 0.7529412,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 1658.0,
+        "y": 84.0,
+        "z": 10.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 81.0,
+        "height": 122.0
+      }
+    },
+    {
+      "event_type": "Child",
+      "parent_id": "248026",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": false,
+      "time_occurred": "2023-11-02T22:21:35.559Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 1.0,
+        "g": 0.0,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.7529412,
+        "g": 0.7529412,
+        "b": 0.7529412,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 187.0,
+        "y": 130.0,
+        "z": 11.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 76.0,
+        "height": 114.0
+      }
+    },
+    {
+      "event_type": "Parent",
+      "parent_id": "248942",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:21:34.196Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 585.0,
+        "y": 388.0,
+        "z": 16.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 36.0,
+        "height": 36.0
+      }
+    },
+    {
+      "event_type": "Child",
+      "parent_id": "248942",
+      "task_id": "Crossy Road",
+      "user_input": true,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:21:34.449Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 600.0,
+        "y": 330.0,
+        "z": 15.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 38.0,
+        "height": 38.0
+      }
+    },
+    {
+      "event_type": "Child",
+      "parent_id": "248942",
+      "task_id": "Crossy Road",
+      "user_input": true,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:21:34.786Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 749.0,
+        "y": 275.0,
+        "z": 14.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 40.0,
+        "height": 40.0
+      }
+    },
+    {
+      "event_type": "Child",
+      "parent_id": "248942",
+      "task_id": "Crossy Road",
+      "user_input": true,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:21:34.987Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 791.0,
+        "y": 248.0,
+        "z": 14.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 41.0,
+        "height": 41.0
+      }
+    },
+    {
+      "event_type": "Child",
+      "parent_id": "248942",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:21:35.559Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 818.0,
+        "y": 226.0,
+        "z": 13.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 43.0,
+        "height": 43.0
+      }
+    },
+    {
+      "event_type": "Parent",
+      "parent_id": "246794",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": true,
+      "time_occurred": "2023-11-02T22:21:26.366Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.5019608,
+        "g": 0.268458158,
+        "b": 0.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.2509804,
+        "g": 1.0,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 1808.0,
+        "y": -81.0,
+        "z": 9.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 66.0,
+        "height": 66.0
+      }
+    },
+    {
+      "event_type": "Parent",
+      "parent_id": "246736",
+      "task_id": "Crossy Road",
+      "user_input": false,
+      "should_respond": false,
+      "time_occurred": "2023-11-02T22:21:34.196Z",
+      "foreground": {
+        "encoding": "RGBAFloat",
+        "r": 0.0,
+        "g": 0.5019608,
+        "b": 1.0,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "background": {
+        "encoding": "RGBAFloat",
+        "r": 0.7529412,
+        "g": 0.7529412,
+        "b": 0.7529412,
+        "transforms": {
+          "alpha": 1.0
+        }
+      },
+      "position": {
+        "unit_type": "pixels",
+        "x": 1742.0,
+        "y": 63.0,
+        "z": 10.0
+      },
+      "dimensions": {
+        "unit_type": "pixels",
+        "width": 84.0,
+        "height": 126.0
+      }
+    }
+  ]
+}

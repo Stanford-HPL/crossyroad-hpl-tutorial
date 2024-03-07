@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using AI.Metaviz.HPL.Demo;
 
 [RequireComponent(typeof(PlayerMovementScript))]
 public class CameraMovementScript : MonoBehaviour
