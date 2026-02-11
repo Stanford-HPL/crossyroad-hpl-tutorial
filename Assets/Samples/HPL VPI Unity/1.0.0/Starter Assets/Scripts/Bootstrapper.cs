@@ -11,7 +11,15 @@ public static class Bootstrapper {
     /// </summary>
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
     public static void Execute() {
-        Object.DontDestroyOnLoad(Object.Instantiate(Resources.Load("Prefabs/Systems")));
+        GameObject systemsPrefab = Resources.Load<GameObject>("Prefabs/Systems");
+    
+        if (systemsPrefab == null) {
+            Debug.LogError("Bootstrapper: 'Prefabs/Systems' not found in Resources! Check case sensitivity.");
+            return;
+        }
+
+        Object.DontDestroyOnLoad(Object.Instantiate(systemsPrefab));
+        Debug.Log("Systems Prefab instantiated successfully.");
     }
 }
 

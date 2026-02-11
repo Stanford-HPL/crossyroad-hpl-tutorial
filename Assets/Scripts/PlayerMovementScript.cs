@@ -1,6 +1,7 @@
 ﻿using System;
 using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement; // Required for scene management
 
 public class PlayerMovementScript : MonoBehaviour {
     
@@ -341,7 +342,8 @@ public class PlayerMovementScript : MonoBehaviour {
         // When game over, disable moving.
         canMove = false;
         boxCollider.enabled = false;
-        LevelManager.Instance.SwapToScoreScene();
+        SceneManager.LoadScene("Scores");
+        // LevelManager.Instance.SwapToScoreScene();
 
         // Call GameOver at game state controller (instead of sending messages).
         gameStateController.GameOver();
