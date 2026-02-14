@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "com.hpl.vpi-unity": "file:/Users/stevenle/Documents/GitHub/VPI-Unity",
+    "com.hpl.vpi-unity": "https://github.com/Stanford-HPL/VPI-Unity.git",
     "com.unity.ai.navigation": "1.1.5",
     "com.unity.collab-proxy": "2.6.0",
     "com.unity.connect.share": "4.2.4",

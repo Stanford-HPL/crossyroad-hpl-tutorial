@@ -1,12 +1,13 @@
 {
   "dependencies": {
     "com.hpl.vpi-unity": {
-      "version": "file:/Users/stevenle/Documents/GitHub/VPI-Unity",
+      "version": "https://github.com/Stanford-HPL/VPI-Unity.git",
       "depth": 0,
-      "source": "local",
+      "source": "git",
       "dependencies": {
         "com.unity.nuget.newtonsoft-json": "3.2.1"
-      }
+      },
+      "hash": "a4ca64c416ef723e7a7b88a20eb1ff6315505373"
     },
     "com.unity.2d.animation": {
       "version": "9.1.3",
